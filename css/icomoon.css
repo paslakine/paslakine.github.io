@@ -1482,10 +1482,10 @@
 .icon-yelp:before {
   content: "\ea63";
 }
-.icon-dribbble-with-circle:before {
+.icon-instagram-with-circle:before {
   content: "\ea64";
 }
-.icon-dribbble:before {
+.icon-instagram:before {
   content: "\ea65";
 }
 .icon-facebook-with-circle:before {
@@ -1500,10 +1500,10 @@
 .icon-flickr:before {
   content: "\ea69";
 }
-.icon-github-with-circle:before {
+.icon-facebook-with-circle:before {
   content: "\ea6a";
 }
-.icon-github:before {
+.icon-facebook:before {
   content: "\ea6b";
 }
 .icon-google-with-circle:before {
