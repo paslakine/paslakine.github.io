@@ -730,7 +730,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
-  color: #e6e6e6;
+  color: #8BA6B1;
 }
 .fh5co-tabs .fh5co-tab-nav li a:hover {
   color: white;
@@ -837,7 +837,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .price-box .btn-select-plan {
   padding: 10px 20px;
-  background: #5bc0de;
+  background: #8BA6B1;
   color: #f9f5f0;
 }
 .price-box .classes {
@@ -862,7 +862,7 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #888f94;
+  color: #7E7F83;
 }
 .pricing-plan.pricing-plan-offer {
   margin-bottom: 24px;
@@ -888,7 +888,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 13px;
   display: block;
   text-transform: uppercase;
-  color: #888f94;
+  color: #7E7F83;
 }
 
 #fh5co-portfolio-list {
@@ -1048,7 +1048,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-testimonial {
-  background: #efefef;
+  background: #f9f5f0;
 }
 #fh5co-testimonial .testimony-slide {
   text-align: center;
@@ -1605,9 +1605,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-info {
-  background: #5bc0de;
+  background: #8BA6B1;
   color: #f9f5f0;
-  border: 2px solid #5bc0de;
+  border: 2px solid #8BA6B1;
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active {
   background: #46b8da !important;
@@ -1615,11 +1615,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .btn-info.btn-outline {
   background: transparent;
-  color: #5bc0de;
-  border: 1px solid #5bc0de;
+  color: #8BA6B1;
+  border: 1px solid #8BA6B1;
 }
 .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
-  background: #5bc0de;
+  background: #8BA6B1;
   color: #f9f5f0;
 }
 
