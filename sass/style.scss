@@ -8,10 +8,10 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #F85A16 !default;
+$brand-primary: #D9A441 !default;
 
-$brand-white: #fff;
-$brand-black: #000;
+$brand-white: #f9f5f0;
+$brand-black: #513c21;
 $brand-darker: #444;
 $brand-gray: #ccc;
 $brand-lighter: #e9e9e9;
@@ -112,7 +112,7 @@ body {
 	font-size: 16px;
 	line-height: 1.7;
 	color: #828282;
-	background: #fff;
+	background: #f9f5f0;
 }
 #page {
 	position: relative;
@@ -1756,7 +1756,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../images/loader.gif) center no-repeat #fff;
+	background: url(../images/loader.gif) center no-repeat #f9f5f0;
 }
 
 .animate-box {
