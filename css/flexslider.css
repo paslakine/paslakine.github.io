@@ -74,8 +74,8 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 .flexslider {
   margin: 0 0 60px;
-  background: #ffffff;
-  border: 4px solid #ffffff;
+  background: #f9f5f0fff;
+  border: 4px solid #f9f5f0fff;
   position: relative;
   zoom: 1;
   -webkit-border-radius: 4px;
@@ -179,7 +179,7 @@ html[xmlns] .flexslider .slides {
   z-index: 10;
   overflow: hidden;
   cursor: pointer;
-  color: #000;
+  color: #513c21;
 }
 .flex-pauseplay a:before {
   font-family: "flexslider-icon";
@@ -226,7 +226,7 @@ html[xmlns] .flexslider .slides {
   background: rgba(0, 0, 0, 0.7);
 }
 .flex-control-paging li a.flex-active {
-  background: #000;
+  background: #513c21;
   background: rgba(0, 0, 0, 0.9);
   cursor: default;
 }
