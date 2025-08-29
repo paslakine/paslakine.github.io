@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #D9A441;
+  color: #d9a545;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #D9A441;
+  color: #d9a545;
   outline: none;
   text-decoration: none;
 }
@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #f9f5f0;
-  background: #D9A441;
+  background: #d9a545;
 }
 
 ::-moz-selection {
   color: #f9f5f0;
-  background: #D9A441;
+  background: #d9a545;
 }
 
 ::selection {
   color: #f9f5f0;
-  background: #D9A441;
+  background: #d9a545;
 }
 
 .fh5co-nav {
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 28px 0;
 }
 .fh5co-nav .top {
-  background: #D9A441;
+  background: #d9a545;
   padding: 7px 0;
   margin-bottom: 0;
 }
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Work Sans", Arial, sans-serif;
 }
 .fh5co-nav #fh5co-logo a span {
-  color: #D9A441;
+  color: #d9a545;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 0;
   text-align: left;
-  background: #D9A441;
+  background: #d9a545;
   padding: 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-bottom-color: #D9A441;
+  border-bottom-color: #d9a545;
   border-width: 8px;
   margin-left: -8px;
 }
@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #f9f5f0;
 }
 .fh5co-nav ul li.btn-cta a span {
-  background: #D9A441;
+  background: #d9a545;
   padding: 4px 20px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
 .fh5co-nav ul li.active > a {
-  color: #D9A441 !important;
+  color: #d9a545 !important;
 }
 
 #fh5co-header,
@@ -419,7 +419,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #D9A441;
+  color: #d9a545;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -438,7 +438,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #D9A441;
+  color: #d9a545;
   position: absolute;
   left: 0;
   top: .05em;
@@ -513,7 +513,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 30px;
-  background: #D9A441 !important;
+  background: #d9a545 !important;
   color: #f9f5f0;
   border: none !important;
   font-size: 18px;
@@ -521,7 +521,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header .display-tc .btn:hover,
 #fh5co-counter .display-tc .btn:hover,
 .fh5co-cover .display-tc .btn:hover {
-  background: #D9A441 !important;
+  background: #d9a545 !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -622,7 +622,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 40px;
   height: 2px;
   margin: 0 auto;
-  background: #D9A441;
+  background: #d9a545;
   content: '';
 }
 
@@ -660,7 +660,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #513c21;
 }
 .trainer .title h3 a:hover, .trainer .title h3 a:focus {
-  color: #D9A441;
+  color: #d9a545;
 }
 .trainer .title span {
   text-transform: uppercase;
@@ -736,7 +736,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: white;
 }
 .fh5co-tabs .fh5co-tab-nav li.active a {
-  background: #D9A441;
+  background: #d9a545;
   color: #f9f5f0;
 }
 .fh5co-tabs .fh5co-tab-content-wrap {
@@ -805,7 +805,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-tabs .class-schedule li .time {
   display: inline-block;
   padding: 5px 12px;
-  background: #D9A441;
+  background: #d9a545;
   color: #f9f5f0;
   font-size: 13px;
 }
@@ -830,10 +830,10 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .price-box.popular .btn-select-plan {
-  background: #D9A441;
+  background: #d9a545;
 }
 .price-box.popular .price {
-  color: #D9A441;
+  color: #d9a545;
 }
 .price-box .btn-select-plan {
   padding: 10px 20px;
@@ -1031,7 +1031,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 60px;
   height: 2px;
   margin: 0 auto;
-  background: #D9A441;
+  background: #d9a545;
   content: '';
 }
 .fh5co-heading p {
@@ -1125,7 +1125,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: rgba(255, 255, 255, 0.7);
 }
 #fh5co-started h2 .percent {
-  color: #D9A441;
+  color: #d9a545;
   font-weight: 700;
 }
 #fh5co-started p {
@@ -1161,7 +1161,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #D9A441;
+  background: #d9a545;
   color: #f9f5f0;
   font-size: 16px;
   text-transform: uppercase;
@@ -1210,7 +1210,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 2px 10px;
   padding-left: 40px;
   margin-left: -40px;
-  background: #D9A441;
+  background: #d9a545;
   position: relative;
 }
 .fh5co-blog .blog-text span.posted_on:before {
@@ -1222,7 +1222,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 0;
   border-style: solid;
   border-width: 0 0 9px 9px;
-  border-color: transparent transparent #D9A441 transparent;
+  border-color: transparent transparent #d9a545 transparent;
 }
 .fh5co-blog .blog-text span.comment {
   float: right;
@@ -1231,7 +1231,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: rgba(0, 0, 0, 0.3);
 }
 .fh5co-blog .blog-text span.comment a i {
-  color: #D9A441;
+  color: #d9a545;
   padding-left: 7px;
 }
 .fh5co-blog .blog-text h3 {
@@ -1567,9 +1567,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #D9A441;
+  background: #d9a545;
   color: #f9f5f0;
-  border: 2px solid #D9A441;
+  border: 2px solid #d9a545;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #f96c2f !important;
@@ -1577,11 +1577,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #D9A441;
-  border: 1px solid #D9A441;
+  color: #d9a545;
+  border: 1px solid #d9a545;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #D9A441;
+  background: #d9a545;
   color: #f9f5f0;
 }
 
@@ -1711,7 +1711,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #D9A441;
+  border-color: #d9a545;
 }
 
 .row-pb-md {
