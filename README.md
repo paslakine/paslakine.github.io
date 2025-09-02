@@ -70,36 +70,3 @@ http://dimsemenov.com/plugins/magnific-popup/
 Demo Images:
 http://unsplash.com
 http://pexels.com
-
-#fh5co-testimonial .owl-nav button {
-    background: none !important;
-    border: none !important;
-    outline: none !important;
-    pointer-events: auto;
-    box-shadow: none !important;
-    width: auto !important;
-    height: auto !important;
-    padding: 0 !important;
-}
-
-#fh5co-testimonial .owl-nav .owl-prev,
-#fh5co-testimonial .owl-nav .owl-next {
-    font-size:  0.625em; /* 50% de la taille précédente */
-    color:
-    padding: 0 10px;
-    cursor: pointer;
-    background: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    transition: color 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#fh5co-testimonial .owl-nav .owl-prev:hover,
-#fh5co-testimonial .owl-nav .owl-next:hover {
-    color: #513c21; /* Brun cacao au survol, ou choisis une autre couleur si tu préfères */
-    background: none !important;
-}
-
