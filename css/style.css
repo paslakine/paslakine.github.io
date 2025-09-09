@@ -1738,30 +1738,27 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
 }
 
-p {
+.para {
+  font-size: 1.1em;
   color: #7E7F83;
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 16px;
 }
 
-
-/* Les liens dans les paragraphes restent gris même au survol */
-p a {
-  color: #7E7F83;
+/* Lien doré spécial */
+.link-gold {
+  color: #d9a545 !important;
+  font-weight: bold;
   text-decoration: none;
 }
 
-p a:hover,
-p a:focus {
-  color: #7E7F83; /* ne change pas au survol */
-}
-
-/* Exception : Gordon Ramsay doré */
-p a[href*="gordon-ramsay"] {
-  color: #d9a545 !important;
-  font-weight: bold;
-}
-
-p a[href*="gordon-ramsay"]:hover,
-p a[href*="gordon-ramsay"]:focus {
+.link-gold:hover {
   color: #d9a545 !important; /* reste doré au survol */
 }
+
+
+
+
+
 /*# sourceMappingURL=style.css.map */
