@@ -1773,6 +1773,29 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
+/* Forcer une hauteur au carrousel */
+.owl-carousel {
+  min-height: 300px;  /* valeur par défaut mobile */
+}
+
+/* Images dans le carrousel */
+.owl-carousel .item img {
+  width: 100%;
+  height: 300px;         /* valeur mobile */
+  object-fit: cover;
+  display: block;
+}
+
+/* Version tablette / desktop */
+@media (min-width: 768px) {
+  .owl-carousel {
+    min-height: 400px;
+  }
+  .owl-carousel .item img {
+    height: 400px;
+  }
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
