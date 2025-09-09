@@ -1759,6 +1759,20 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 
+/* Carrousel images Team Building*/
+.owl-carousel .item img {
+  width: 100%;
+  height: 400px;        /* fixe la hauteur */
+  object-fit: cover;    /* coupe l’image proprement */
+  display: block;
+}
+
+/* Empêche le collapse au chargement */
+.owl-carousel {
+  min-height: 400px;
+}
+
+
 
 
 /*# sourceMappingURL=style.css.map */
