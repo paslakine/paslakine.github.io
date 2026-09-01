@@ -9,16 +9,19 @@
     <meta name="keywords" content="atelier pâtisserie, cours pâtisserie, team building, groupe, montréal, mtl, evjf, babyshower, idée activité" />
     <meta name="author" content="la crème des bordelaises" />
 
+    <!-- Préchargement de l'image du header pour un affichage instantané -->
+    <link rel="preload" as="image" href="images/Team_Building_Montreal.jpeg">
+
     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <meta property="og:title" content="Team Building Pâtisserie à Montréal &mdash; La Crème des Bordelaises"/>
+    <meta property="og:image" content="images/Team_Building_Montreal.jpeg"/>
+    <meta property="og:url" content="https://lacremedesbordelaises.com/teambuilding.html"/>
+    <meta property="og:site_name" content="La Crème des Bordelaises"/>
+    <meta property="og:description" content="Fédérez vos équipes autour d'une expérience gourmande et mémorable à Montréal. Activité clé en main."/>
+    <meta name="twitter:title" content="Team Building Pâtisserie à Montréal" />
+    <meta name="twitter:image" content="images/Team_Building_Montreal.jpeg" />
+    <meta name="twitter:url" content="https://lacremedesbordelaises.com/teambuilding.html" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
@@ -36,10 +39,25 @@
 
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+
+
+        <style>
+        /* Supprime le fond gris derrière le texte du header */
+        #fh5co-header .display-tc {
+            background: transparent !important;
+        }
+
+        /* Ajustements mobiles pour les encarts des 3 piliers */
+        @media (max-width: 768px) {
+            .pillar-card {
+                padding: 20px 15px !important;
+            }
+        }
+    </style>
+    </style>
     </head>
     <body>
         
@@ -94,14 +112,14 @@
         </div>
     </nav>
 
-    <!-- Header avec la photo Atelier_corporatif_pâtisserie.JPG -->
-    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/Team_Building_Montreal.jpeg); background-size: cover; background-position: center; height: 420px !important; min-height: 420px !important; max-height: 420px !important; padding: 60px 0;" data-stellar-background-ratio="0.5">
+    <!-- Header avec couleur de fond de secours pour éviter le carré gris -->
+    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-color: #513c21; background-image:url(images/Team_Building_Montreal.jpeg); background-size: cover; background-position: center; height: 420px !important; min-height: 420px !important; max-height: 420px !important; padding: 60px 0;" data-stellar-background-ratio="0.5">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.45); z-index: 1;"></div>
         <div class="container" style="position: relative; z-index: 2; height: 100%;">
             <div class="row" style="height: 100%;">
                 <div class="col-md-10 col-md-offset-1 text-center" style="height: 100%; display: flex; align-items: center; justify-content: center;">
                     <div class="display-t" style="height: auto; width: 100%;">
-                        <div class="display-tc animate-box" data-animate-effect="fadeIn" style="display: block; padding: 0;">
+                       
                             <h1 style="font-size: clamp(26px, 4vw, 40px); color: #fff; font-weight: 700; line-height: 1.3; margin-bottom: 12px;">
                                 Team Building Pâtisserie à Montréal<br>Activité d’Entreprise Clé en Main
                             </h1>
@@ -122,7 +140,7 @@
             <div class="row">
                 <!-- Carte 1 : L'Expertise -->
                 <div class="col-md-4" style="margin-bottom: 30px;">
-                    <div style="background: #fdfaf6; border: 1px solid #f3e2c3; border-radius: 8px; padding: 30px 25px; height: 100%;">
+                    <div class="pillar-card" style="background: #fdfaf6; border: 1px solid #f3e2c3; border-radius: 8px; padding: 30px 25px; height: 100%;">
                         <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #d9a545; text-transform: uppercase; display: block; margin-bottom: 10px;">Excellence</span>
                         <h3 style="font-size: 17px; font-weight: 700; color: #513c21; margin-bottom: 10px;">L'exigence d'une Chef</h3>
                         <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0;">
@@ -133,7 +151,7 @@
 
                 <!-- Carte 2 : Le Clé en Main -->
                 <div class="col-md-4" style="margin-bottom: 30px;">
-                    <div style="background: #fdfaf6; border: 1px solid #f3e2c3; border-radius: 8px; padding: 30px 25px; height: 100%;">
+                    <div class="pillar-card" style="background: #fdfaf6; border: 1px solid #f3e2c3; border-radius: 8px; padding: 30px 25px; height: 100%;">
                         <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #d9a545; text-transform: uppercase; display: block; margin-bottom: 10px;">Sérénité</span>
                         <h3 style="font-size: 17px; font-weight: 700; color: #513c21; margin-bottom: 10px;">Zéro charge mentale</h3>
                         <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0;">
@@ -144,7 +162,7 @@
 
                 <!-- Carte 3 : Sur-mesure -->
                 <div class="col-md-4" style="margin-bottom: 30px;">
-                    <div style="background: #fdfaf6; border: 1px solid #f3e2c3; border-radius: 8px; padding: 30px 25px; height: 100%;">
+                    <div class="pillar-card" style="background: #fdfaf6; border: 1px solid #f3e2c3; border-radius: 8px; padding: 30px 25px; height: 100%;">
                         <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #d9a545; text-transform: uppercase; display: block; margin-bottom: 10px;">Sur-Mesure</span>
                         <h3 style="font-size: 17px; font-weight: 700; color: #513c21; margin-bottom: 10px;">Formats adaptés</h3>
                         <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0;">
@@ -169,7 +187,7 @@
         </div>
     </div>
 
-   <!-- ========================================== -->
+    <!-- ========================================== -->
     <!-- FORMAT PHARE : LE PASTRY CHALLENGE -->
     <!-- ========================================== -->
     <section style="padding: 60px 0; background-color: #fcf9f5; border-top: 1px solid #f3e2c3;">
@@ -177,7 +195,7 @@
             
             <div class="row" style="display: flex; flex-wrap: wrap; align-items: center; margin-right: -15px; margin-left: -15px;">
                 
-                <!-- COLONNE GAUCHE -->
+                <!-- COLONNE GAUCHE (TEXTE) -->
                 <div class="col-md-7" style="padding: 0 15px; margin-bottom: 30px;">
                     
                     <div style="margin-bottom: 20px;">
@@ -222,7 +240,7 @@
 
                 </div>
 
-     <!-- COLONNE DROITE -->
+                <!-- COLONNE DROITE (PHOTOS) -->
                 <div class="col-md-5" style="padding: 0 15px; margin-bottom: 30px;">
                     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
                         
@@ -250,7 +268,7 @@
         </div>
     </section>
 
-<!-- ========================================== -->
+    <!-- ========================================== -->
     <!-- FORMAT SECONDAIRE : LE FAKE CAKE CHALLENGE -->
     <!-- ========================================== -->
     <section style="padding: 60px 0; background-color: #ffffff; border-top: 2px dashed #8BA6B1; border-bottom: 2px dashed #8BA6B1;">
@@ -258,29 +276,8 @@
             
             <div class="row" style="display: flex; flex-wrap: wrap; align-items: center; margin-right: -15px; margin-left: -15px;">
                 
-                <div class="col-md-5" style="padding: 0 15px; margin-bottom: 30px;">
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
-                        
-                        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.06); border: 2px solid #8BA6B1; aspect-ratio: 1 / 1;">
-                            <img src="images/fake_cake_bis.JPG" alt="Fake Cake Challenge - Team building créatif à Montréal" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        </div>
-                        
-                        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.06); border: 2px solid #8BA6B1; aspect-ratio: 1 / 1;">
-                            <img src="images/cours_cuisine_team_building.jpeg" alt="Création collective d'un faux gâteau d'entreprise" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        </div>
-                        
-                        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.06); border: 2px solid #8BA6B1; aspect-ratio: 1 / 1;">
-                            <img src="images/cours_patisserie_montreal.jpeg" alt="Atelier artistique et cohésion d'équipe en entreprise" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        </div>
-                        
-                        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.06); border: 2px solid #8BA6B1; aspect-ratio: 1 / 1;">
-                            <img src="images/activite_team_building.JPG" alt="Décoration de gâteau en polyester et pâte à sucre" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-7" style="padding: 0 15px;">
+                <!-- COLONNE GAUCHE (TEXTE) - Inversée pour apparaître en premier sur mobile -->
+                <div class="col-md-7 col-md-push-5" style="padding: 0 15px; margin-bottom: 30px;">
                     
                     <div style="margin-bottom: 15px;">
                         <span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #ffffff; text-transform: uppercase; background: #8BA6B1; padding: 5px 12px; border-radius: 20px; display: inline-block;">
@@ -322,6 +319,29 @@
                         </a>
                     </div>
 
+                </div>
+
+                <!-- COLONNE DROITE (PHOTOS) - Inversée pour passer sous le texte sur mobile -->
+                <div class="col-md-5 col-md-pull-7" style="padding: 0 15px; margin-bottom: 30px;">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                        
+                        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.06); border: 2px solid #8BA6B1; aspect-ratio: 1 / 1;">
+                            <img src="images/fake_cake_bis.JPG" alt="Fake Cake Challenge - Team building créatif à Montréal" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        
+                        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.06); border: 2px solid #8BA6B1; aspect-ratio: 1 / 1;">
+                            <img src="images/cours_cuisine_team_building.jpeg" alt="Création collective d'un faux gâteau d'entreprise" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        
+                        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.06); border: 2px solid #8BA6B1; aspect-ratio: 1 / 1;">
+                            <img src="images/cours_patisserie_montreal.jpeg" alt="Atelier artistique et cohésion d'équipe en entreprise" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        
+                        <div style="border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.06); border: 2px solid #8BA6B1; aspect-ratio: 1 / 1;">
+                            <img src="images/activite_team_building.JPG" alt="Décoration de gâteau en polyester et pâte à sucre" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
