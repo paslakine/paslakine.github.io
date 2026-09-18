@@ -1,336 +1,1000 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>La Crème des Bordelaises &mdash;</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="atelier pâtisserie Montréal, team building" />
-	<meta name="keywords" content="atelier pâtisserie, cours pâtisserie, team building, groupe, montréal, mtl, evjf, babyshower, idée activité" />
-	<meta name="author" content="la crème des bordelaises" />
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EVJF, Bachelorette Party, Baby Shower & Anniversaire à Montréal &mdash; La Crème des Bordelaises</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Activité originale et atelier de pâtisserie privé pour EVJF, bachelorette party, baby shower et anniversaire à Montréal. Cours clé en main à domicile." />
+    <meta name="keywords" content="EVJF montréal, bachelorette party montréal, baby shower montréal, atelier pâtisserie groupe, anniversaire mtl, idée activité originale" />
+    <meta name="author" content="la crème des bordelaises" />
+
+    <!-- Préchargement de l'image du header -->
+    <link rel="preload" as="image" href="images/atelier_evjf_montréal.jpg">
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="EVJF, Bachelorette Party, Baby Shower & Anniversaire à Montréal &mdash; La Crème des Bordelaises"/>
+    <meta property="og:image" content="images/atelier_evjf_montréal.jpg"/>
+    <meta property="og:url" content="https://lacremedesbordelaises.com/evjf_babyshower.html"/>
+    <meta property="og:site_name" content="La Crème des Bordelaises"/>
+    <meta property="og:description" content="Vivez un moment magique, gourmand et unique entre amies pour un EVJF, bachelorette party, baby shower ou anniversaire à Montréal."/>
+    <meta name="twitter:title" content="EVJF, Bachelorette Party & Baby Shower Pâtisserie à Montréal" />
+    <meta name="twitter:image" content="images/atelier_evjf_montréal.jpg" />
+    <meta name="twitter:url" content="https://lacremedesbordelaises.com/evjf_babyshower.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        #fh5co-header .display-tc {
+            background: transparent !important;
+        }
+
+        /* Galeries photos dézoomées (object-fit: contain) pour ne rien couper */
+        .moodboard-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 40px 0 20px 0;
+        }
+        .moodboard-gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            background-color: #faf6f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease;
+        }
+        .moodboard-gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Encart blanc élégant pour le texte retravaillé */
+        .content-card {
+            background: #ffffff;
+            border: 1px solid #f0e4d0;
+            border-radius: 12px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(81, 60, 33, 0.08);
+            margin-bottom: 40px;
+        }
+
+        /* Grille des points forts en CERCLÉS transparents (sans fond blanc), contour doré épais, texte grossi */
+        .features-circles-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .feature-circle-item {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 3px solid #d9a545;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            box-shadow: 0 6px 15px rgba(217, 165, 69, 0.08);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .feature-circle-item:hover {
+            transform: translateY(-5px);
+            background-color: rgba(217, 165, 69, 0.04);
+        }
+        .feature-circle-item h4 {
+            color: #513c21;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Encart de Réassurance TV / Expertise */
+        .reassurance-box {
+            background: #fcf9f5;
+            border: 2px dashed #d9a545;
+            border-radius: 12px;
+            padding: 40px 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        .reassurance-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .reassurance-grid img {
+            width: 250px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+/* Bouton d'action principal dans le header */
+.header-cta {
+    display: inline-block;
+    background-color: #d9a545;
+    border: 2px solid #d9a545;
+    color: #fff !important;
+
+    padding: 14px 32px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    border-radius: 4px;
+    text-decoration: none !important;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.header-cta:hover,
+.header-cta:focus {
+    background-color: #c79438;
+    border-color: #c79438;
+    color: #fff !important;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.header-cta i {
+    margin-left: 7px;
+}
+        @media (max-width: 992px) {
+            .moodboard-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .features-circles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 30px 20px;
+            }
+            .moodboard-gallery {
+                grid-template-columns: 1fr;
+            }
+            .features-circles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    
+/* === Mise en page : Comment se déroule votre atelier ? === */
+.workshop-steps-section { background:#fff; padding:85px 0 95px; }
+.workshop-steps-header { text-align:center; margin-bottom:65px; }
+.workshop-steps-kicker { display:block; color:#d9a545; font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; margin-bottom:15px; }
+.workshop-steps-title { color:#513c21; font-size:36px; font-weight:700; line-height:1.25; margin:0; }
+.workshop-steps-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:45px; align-items:start; }
+.workshop-step { text-align:center; }
+.workshop-step-number { width:54px; height:54px; margin:0 auto 20px; border-radius:50%; background:#d9a545; color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700; }
+.workshop-step h3 { color:#513c21; font-size:19px; font-weight:700; line-height:1.4; margin:0 0 12px; }
+.workshop-step p { color:#777; font-size:15px; line-height:1.7; margin:0 auto; max-width:270px; }
+@media (max-width:992px) { .workshop-steps-grid { grid-template-columns:repeat(2,1fr); gap:55px 35px; } }
+@media (max-width:768px) {
+  .workshop-steps-section { padding:60px 0 70px; }
+  .workshop-steps-header { margin-bottom:45px; }
+  .workshop-steps-title { font-size:28px; }
+  .workshop-steps-grid { grid-template-columns:1fr; gap:45px; }
+  .workshop-step p { max-width:320px; }
+}
 
 
-
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
-
-	
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="top">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 text-right" style="display: flex; align-items: center; justify-content: flex-end; gap: 12px;">
-    <span style="font-size: 12px; color: #f3e2c3;">Lacremedesbordelaises@gmail.com</span>
-    <ul class="fh5co-social" style="display: flex; gap: 8px; align-items: center; padding: 0; margin: 0;">
-        <li style="list-style: none; margin: 0; padding: 0;">
-            <a href="https://www.instagram.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
-                <i class="icon-instagram" style="font-size:18px;"></i>
-            </a>
-        </li>
-        <li style="list-style: none; margin: 0; padding: 0;">
-            <a href="https://www.facebook.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
-                <img src="images/facebook_lcdb.png" alt="Facebook" style="width:18px; height:18px; display:block;">
-            </a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="top-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="index.html">La Crème Des Bordelaises<span>.</span></a></div>
-					</div>
-					<div class="col-xs-10 text-right menu-1">
-						<ul>
-							<li><a href="index.html">Accueil</a></li>
-							<li><a href="teambuilding.html">Team building</a></li>
-							<li class="has-dropdown">
-								<a href="cursor: pointer;">Particulier</a>
-								<ul class="dropdown">
-								<li><a href="evjf_babyshower.html">EVJF / Babyshower</a></li>
-								<li><a href="anniversaire.html">Anniversaire / fête</a></li>
-								</ul>
-							</li>
-							<li><a href="quisuisje.html">Qui suis-je?</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<!-- <li class="btn-cta"><a href="#"><span>Login</span></a></li> -->
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</nav>
-
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/evjf_montréal_fond.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>EVJF et Babyshower </br> sur Montréal </h1>
-							<h2>Activités originales pour un EVJF sur Montréal et ses environs </h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<div id="fh5co-gallery">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12" style="text-align: center; margin-top: -5%; ">
-					<h2 style="color: #d9a545;">Atelier pâtisserie EVJF et Babyshower</h2>
-					<p>Vous souhaitez une activité originale sur Montréal et ses environs pour un  <strong>EVJF/ Bachelorette party, une baby shower ou encore une gender reveal party</strong>.<br>Chacun de ces événements méritent un jour particulier à la hauteur de vos envies. 
-						Craquez pour un atelier de pâtisserie sur mesure.<br>
-La Crème des Bordelaises met à votre service son expérience auprès des plus grands Chefs Français. Et vous propose ses <strong>cours de pâtisserie à domicile</strong>, correspondant à vos envies et votre budget.
-Maîtrisez la poche à douille, l’art du dressage et des finitions et vivez un moment magique avec vos invité(e)s. 
-
-				</div>
-			</div>
-		</div>
-	</div>
-	
-<div id="fh5co-services" class="fh5co-bg-section" style="padding-top: 180px; padding-bottom: 0px;">
-		<div class="container">
-			<div class="row" style="display: flex; align-items: flex-start; flex-wrap: wrap;">
-    <!-- Texte à gauche -->
-    <div class="col-md-7 col-sm-12" style="margin-bottom: 24px;">
-      <div class="services">
-        <h3 style="font-size: 1.8em; color: #8BA6B1;text-align: center">EVJF / Bachelorette sur Montréal</h3>
-        <p style="font-size: 1.1em; color: #7E7F83; text-align: justify;">
-           Craquez pour un <strong>atelier pâtisserie privé pour votre EVJF/ Bachelorette Party</strong>. <br>Votre Cheffe c’est moi : Pascaline, ancienne candidate du<strong> Meilleur Patissier Professionnels </strong>; pâtissière professionnelle passionnée, ancienne pâtissière chez <strong>P. Etchebest, Gordon Ramsay </strong>et auteure du livre La crème des pâtissières. <br><br>
-		   Je partagerai avec vous tous mes conseils et astuces, le tout dans une ambiance chaleureuse.
-Vous rêvez <strong>d’apprendre à utiliser la poche à douille</strong>, de connaître des astuces de chefs… <br>Je vous propose un format de cours de pâtisserie clés en main, personnalisé pour votre événement, avec un dessert formant les<strong> initiales des futurs marié/es</strong>.
-<br><br>
-Cet atelier vient directement à vous, puisque je me déplace à votre domicile ou dans le lieu de votre choix (Airbnb, salle louée, restaurant, hôtel…).<br><br>
-        </p>
-      </div>
-    </div>
+/* === Pourquoi vous allez adorer l'expérience === */
+.why-experience-section {
+    padding: 85px 0;
+    background: #fcf9f5;
+}
+.why-experience-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.why-experience-image {
+    width: 100%;
+    height: 625px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(81,60,33,.12);
+}
+.why-experience-kicker {
+    display: block;
+    color: #d9a545;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.why-experience-title {
+    color: #513c21;
+    font-size: 34px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 0 0 25px;
+}
+.why-experience-intro {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 26px;
+}
+.why-benefits {
+    border-top: 1px solid #eadfce;
+    margin-top: 10px;
+}
+.why-benefit {
+    padding: 17px 0;
+    border-bottom: 1px solid #eadfce;
+}
+.why-benefit-title {
+    display: block;
+    color: #513c21;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.why-benefit p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 0;
+}
+.why-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.why-price .why-benefit-title {
+    margin-bottom: 0;
+}
+.why-price-value {
+    color: #513c21;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: right;
+}
+.why-cta {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 14px 30px;
+    background: #d9a545;
+    border: 2px solid #d9a545;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none !important;
+    box-shadow: 0 5px 14px rgba(217,165,69,.25);
+    transition: transform .2s ease, background .2s ease;
+}
+.why-cta:hover {
+    background: #c79438;
+    border-color: #c79438;
+    transform: translateY(-2px);
+}
+@media (max-width: 991px) {
+    .why-experience-image {
+        height: 460px;
+        margin-bottom: 45px;
+    }
+}
+@media (max-width: 768px) {
+    .why-experience-section { padding: 60px 0; }
+    .why-experience-image { height: 390px; }
+    .why-experience-title { font-size: 28px; }
+    .why-price { align-items: flex-start; }
+}
 
 
-    <!-- Image à droite -->
-    <div class="col-md-5 col-sm-12" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;margin-top: -13.5%;">
-  <div class="owl-carousel owl-carousel-fullwidth" id="carousel-pastry" style="width: 75%; max-width:400px;">
-    <div class="item">
-      <div class="testimony-slide active text-center">
-        <figure>
-          <img src="images/atelier_evjf_montréal.jpg" alt="user" style="display: block; margin: 0 auto; border-radius: 0; width: 100%; max-width: none; height: auto;">
-        </figure>
-      </div>
-    </div>
-    <div class="item">
-      <div class="testimony-slide active text-center">
-        <figure>
-          <img src="images/evjf_montréal.jpg" alt="user" style="display: block; margin: 0 auto; border-radius: 0; width: 100%; max-width: none; height: auto;">
-        </figure>
-      </div>
-    </div>
-    <div class="item">
-      <div class="testimony-slide active text-center">
-        <figure>
-          <img src="images/evjf_patisserie_montréal.JPG" alt="user" style="display: block; margin: 0 auto; border-radius: 0; width: 100%; max-width: none; height: auto;">
-        </figure>
-      </div>
-    </div>
-   
-  </div>
-    </div>
-           </div>
-		</div>
-	</div>
+/* === Dernier encart de réassurance : photo | texte | photo === */
+.reassurance-box-side {
+    background: #fcf9f5;
+    padding: 75px 0;
+}
+.reassurance-side-layout {
+    display: grid;
+    grid-template-columns: minmax(220px, 1fr) minmax(380px, 1.35fr) minmax(220px, 1fr);
+    gap: 38px;
+    align-items: center;
+}
+.reassurance-side-layout img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 26px rgba(81,60,33,.12);
+}
+.reassurance-side-copy {
+    text-align: center;
+}
+.reassurance-side-copy h3 {
+    color: #513c21;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin: 0 0 18px;
+}
+.reassurance-side-copy p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0 auto;
+}
+@media (max-width: 991px) {
+    .reassurance-side-layout {
+        grid-template-columns: 1fr 1.25fr 1fr;
+        gap: 20px;
+    }
+    .reassurance-side-layout img { height: 320px; }
+}
+@media (max-width: 768px) {
+    .reassurance-box-side { padding: 55px 0; }
+    .reassurance-side-layout { grid-template-columns: 1fr; gap: 25px; }
+    .reassurance-side-copy { order: 1; }
+    .reassurance-photo-left { order: 2; }
+    .reassurance-photo-right { order: 3; }
+    .reassurance-side-layout img { height: 300px; }
+    .reassurance-side-copy h3 { font-size: 25px; }
+}
 
 
-
-<div id="fh5co-services" class="fh5co-bg-section" style="padding-top: 180px; padding-bottom: 0px;">
-		<div class="container">
-			<div class="row" style="display: flex; align-items: flex-start; flex-wrap: wrap;">
-
-    <!-- Image à droite -->
-    <div class="col-md-5 col-sm-12" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start;margin-top: -13.5%;">
-  <div class="owl-carousel owl-carousel-fullwidth" id="carousel-pastry" style="width: 75%; max-width:400px;">
-    <div class="item">
-      <div class="testimony-slide active text-center">
-        <figure>
-          <img src="images/cours_de_patissier_montreal.jpg" alt="user" style="display: block; margin: 0 auto; border-radius: 0; width: 100%; height: auto;object-fit: cover;">
-        </figure>
-      </div>
-    </div>
-    <div class="item">
-      <div class="testimony-slide active text-center">
-        <figure>
-          <img src="images/baby shower montréal.jpg" alt="user" style="display: block; margin: 0 auto; border-radius: 0; width: 100%; height: auto;object-fit: cover;">
-        </figure>
-      </div>
-    </div>
-    <div class="item">
-      <div class="testimony-slide active text-center">
-        <figure>
-          <img src="images/idee_evjf_montréal.jpg" alt="user" style="display: block; margin: 0 auto; border-radius: 0; width: 100%; height: auto;object-fit: cover;">
-        </figure>
-      </div>
-    </div>
-
-  </div>
-  				
-	
-
-
-    </div>
-	    <!-- Texte à gauche -->
-    <div class="col-md-7 col-sm-12" style="margin-bottom: 24px;">
-      <div class="services">
-        <h3 style="font-size: 1.8em; color: #8BA6B1;text-align: center">Activité pour une Babyshower</h3>
-        <p style="font-size: 1.1em; color: #7E7F83; text-align: justify;">
-        Ce format s'adapte également pour un atelier pâtisserie lors d'une<strong> Babyshower</strong> : construire ensemble un dessert gourmand et instagrammable au prénom des parents, du bébé ou du genre du bébé.<br><br>
-      Devenez le temps d’un moment des chefs d’exception !
-Demandez votre<strong> devis gratuit personnalisé.</strong> Le devis est variable d’une prestation à l’autre, prenant en compte le dessert à réaliser, la localisation, le nombre de participants (tarif dégressif à partir de 5 personnes).<br><br>
-Dans la prestation maximum 2h30 (arrivée/départ) sont inclus :<br>
-•	les tabliers en tissus pour les participants<br>
-•	les ingrédients <br>
-•	les ustensiles et robots de cuisine<br>
-•	l’animation par nos 1 Cheffe professionnelle<br>
-•	les frais de déplacement<br>
-
-        </p>
-        <p>
-          <a href="contact.html" class="btn btn-primary btn-outline btn-sm">Demandez votre devis <i class="icon-arrow-right"></i></a>
-        </p>
-      </div>
-    </div>
-           </div>
-		</div>
-	</div>
+/* === Mosaïque photos du bloc "Pourquoi vous allez adorer" === */
+.why-photo-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 285px 285px;
+    gap: 12px;
+    width: 100%;
+}
+.why-photo-collage .why-photo-main {
+    grid-row: 1 / span 2;
+    width: 100%;
+    height: 100%;
+}
+.why-photo-collage .why-photo-small {
+    width: 100%;
+    height: 100%;
+}
+.why-photo-collage img {
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 26px rgba(81,60,33,.10);
+}
+@media (max-width: 991px) {
+    .why-photo-collage {
+        grid-template-rows: 230px 230px;
+        margin-bottom: 45px;
+    }
+}
+@media (max-width: 600px) {
+    .why-photo-collage {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 170px;
+        gap: 8px;
+    }
+    .why-photo-collage .why-photo-main {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+}
 
 
+/* === Galeries 4 photos : rapprochées, sans fond beige === */
+.moodboard-gallery {
+    gap: 8px !important;
+}
+.moodboard-gallery img {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 8px !important;
+}
+
+/* Première galerie : juste avant "Vous avez une autre idée en tête ?" */
+.gallery-before-custom {
+    padding: 32px 0 12px !important;
+    background: #ffffff !important;
+}
+
+/* Bloc "Vous avez une autre idée en tête ?" */
+.custom-idea-section {
+    padding-top: 28px !important;
+    padding-bottom: 38px !important;
+}
+
+/* Deuxième galerie */
+.gallery-after-custom {
+    padding: 10px 0 55px !important;
+    background: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    .moodboard-gallery {
+        gap: 6px !important;
+    }
+    .gallery-before-custom {
+        padding: 24px 0 10px !important;
+    }
+    .custom-idea-section {
+        padding-top: 24px !important;
+        padding-bottom: 30px !important;
+    }
+    .gallery-after-custom {
+        padding: 8px 0 40px !important;
+    }
+}
 
 
+/* =========================================================
+   GALERIES 4 PHOTOS — rendu uniforme type mosaïque
+   4 photos proches, même hauteur, image plein cadre
+   ========================================================= */
+.moodboard-gallery {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    margin: 0 !important;
+    align-items: stretch !important;
+}
 
-	<footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/gallery-4.jpg);" role="contentinfo">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row row-pb-md">
-            <div class="col-md-12 fh5co-widget" style="text-align: center;">
-                <h3>Atelier pâtisserie groupe : team building / consolidation d'équipe, EVJF, anniversaire, baby shower - Montréal</h3>
-                <p>Depuis 2018, j’organise des ateliers de pâtisserie en groupe créatifs et fédérateurs.
-À Montréal, je propose des team building - consolidation d'équipe gourmands où vos équipes co-créent un dessert d’exception.
-Formée auprès de chefs étoilés comme Gordon Ramsay, et passée par l'émission : Le Meilleur Pâtissier – Les Professionnels,
-je propose aussi des ateliers sur-mesure pour EVJF, baby shower, fêtes et anniversaires.</p>
-                <p><a class="btn btn-primary" href="contact.html">Demandez votre devis</a></p>
+.moodboard-gallery img {
+    display: block !important;
+    width: 100% !important;
+    height: 270px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    background: transparent !important;
+    border-radius: 8px !important;
+    box-shadow: 0 5px 14px rgba(81,60,33,.08) !important;
+}
+
+/* Espacement autour de chacune des lignes */
+.gallery-before-custom {
+    padding: 34px 0 26px !important;
+    background: #fff !important;
+}
+
+.gallery-after-custom {
+    padding: 24px 0 55px !important;
+    background: #fff !important;
+}
+
+/* Le bloc texte reste assez proche des galeries */
+.custom-idea-section {
+    padding-top: 38px !important;
+    padding-bottom: 38px !important;
+}
+
+@media (max-width: 992px) {
+    .moodboard-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+    .moodboard-gallery img {
+        height: 280px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .moodboard-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 8px !important;
+    }
+    .moodboard-gallery img {
+        height: 190px !important;
+        border-radius: 7px !important;
+    }
+    .gallery-before-custom {
+        padding: 24px 0 18px !important;
+    }
+    .gallery-after-custom {
+        padding: 18px 0 40px !important;
+    }
+}
+
+
+/* =========================================================
+   AJUSTEMENTS FINAUX DES ESPACEMENTS VERTICAUX
+   ========================================================= */
+
+/* Premier bloc de texte sous le header */
+.intro-section {
+    margin-top: 45px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Section "Simple & clé en main" */
+.workshop-steps-section {
+    padding-top: 55px !important;
+    padding-bottom: 65px !important;
+}
+
+.workshop-steps-header {
+    margin-bottom: 45px !important;
+}
+
+/* Section "Pourquoi vous allez adorer l'expérience" */
+.why-experience-section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        margin-top: 35px !important;
+    }
+
+    .workshop-steps-section {
+        padding-top: 45px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .workshop-steps-header {
+        margin-bottom: 38px !important;
+    }
+
+    .why-experience-section {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
+
+/* =========================================================
+   TAILLE UNIFORME DES TEXTES — POURQUOI VOUS ALLEZ ADORER
+   ========================================================= */
+.why-benefit p {
+    color: #777 !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    margin: 0 !important;
+}
+
+</style>
+
+    <!-- ========================================== -->
+    <!-- TRACKING MICROSOFT CLARITY & GA4          -->
+    <!-- ========================================== -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ycnmy4byph");
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QC4BR9BK6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3QC4BR9BK6');
+    </script>
+    </head>
+    <body>
+        
+    <div class="fh5co-loader"></div>
+    
+    <div id="page">
+    <nav class="fh5co-nav" role="navigation" style="position: relative; z-index: 1000;">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-right" style="display: flex; align-items: center; justify-content: flex-end; gap: 12px;">
+                        <span style="font-size: 12px; color: #f3e2c3;">Lacremedesbordelaises@gmail.com</span>
+                        <ul class="fh5co-social" style="display: flex; gap: 8px; align-items: center; padding: 0; margin: 0;">
+                            <li style="list-style: none; margin: 0; padding: 0;">
+                                <a href="https://www.instagram.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
+                                    <i class="icon-instagram" style="font-size:18px;"></i>
+                                </a>
+                            </li>
+                            <li style="list-style: none; margin: 0; padding: 0;">
+                                <a href="https://www.facebook.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
+                                    <img src="images/facebook_lcdb.png" alt="Facebook" style="width:18px; height:18px; display:block;">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div id="fh5co-logo"><a href="index.html">La Crème Des Bordelaises<span>.</span></a></div>
+                    </div>
+                    <div class="col-xs-10 text-right menu-1">
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="teambuilding.html">Team building</a></li>
+                            <li class="has-dropdown active">
+                                <a href="javascript:void(0);">Particulier</a>
+                                <ul class="dropdown">
+                                    <li><a href="evjf_babyshower.html">EVJF / Babyshower</a></li>
+                                    <li><a href="atelier-domicile.html">Atelier à Domicile</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="quisuisje.html">Qui suis-je?</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-color: #513c21; background-image:url(images/atelier_evjf_montreal_bis.jpg); background-size: cover; background-position: center; height: 500px !important; min-height: 500px !important;" data-stellar-background-ratio="0.5">
+        <div class="overlay" style="background: rgba(0, 0, 0, 0.45); z-index: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2; height: 100%;">
+            <div class="row" style="height: 100%;">
+                <div class="col-md-8 col-md-offset-2 text-center" style="height: 100%; display: flex; align-items: center; justify-content: center;">
+                    <div class="display-t" style="height: auto; width: 100%;">
+                        <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                            <h1 style="font-size: clamp(26px, 3.8vw, 40px); color: #fff; font-weight: 700; line-height: 1.3; margin-bottom: 15px;">
+                                EVJF, Bachelorette Party, Baby Shower &amp; Anniversaire à Montréal
+                            </h1>
+                            <h2 style="font-size: clamp(15px, 2.1vw, 19px); color: #f3e2c3; font-weight: 400; margin-bottom: 0;">
+                                Offrez une activité originale et gourmande pour célébrer votre événement entre amies !
+                            </h2>
+                            <a href="contact-EVJF.html"
+   class="header-cta">
+    Vérifier les disponibilités
+    <i class="icon-arrow-right"></i>
+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- Texte sous le header (SANS encart blanc, avec bel espace de respiration) -->
+    <div class="container intro-section">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #d9a545; text-transform: uppercase; display: block; margin-bottom: 12px;"><br></span>
+                <h2 style="color: #513c21; font-size: 28px; font-weight: 700; margin-bottom: 20px;">Une idée d'activité originale, à la fois gourmande et conviviale</h2>
+                <p style="font-size: 16px; color: #555; line-height: 1.8; margin-bottom: 0;">
+                    À la recherche d'une <strong>idée d'activité originale</strong> à Montréal pour un <strong>enterrement de vie de jeune fille (EVJF)</strong>, un <strong>bachelorette party</strong>, une <strong>baby shower</strong> ou un <strong>anniversaire</strong> ? Plongez dans un <strong>atelier de pâtisserie privé</strong> conçu sur-mesure pour vous. Entre fous rires, apprentissage des gestes professionnels et gourmandise, cet atelier créatif garantit une surprise mémorable et un dessert aussi beau que délicieux !
+                </p>
             </div>
         </div>
     </div>
-</footer>
+
+    
+   <!-- ===================================================== -->
+<!-- COMMENT SE DÉROULE VOTRE ATELIER                      -->
+<!-- ===================================================== -->
+<section class="workshop-steps-section">
+  <div class="container">
+    <div class="workshop-steps-header">
+      <span class="workshop-steps-kicker">Simple &amp; clé en main</span>
+      <h2 class="workshop-steps-title">Comment se déroule votre atelier ?</h2>
+    </div>
+
+    <div class="workshop-steps-grid">
+      <div class="workshop-step">
+        <div class="workshop-step-number">1</div>
+        <h3>Vous choisissez votre date</h3>
+        <p>Indiquez-moi votre événement, le nombre de participantes et le lieu.</p>
+      </div>
+
+      <div class="workshop-step">
+        <div class="workshop-step-number">2</div>
+        <h3>Je prépare tout</h3>
+        <p>J'apporte les ingrédients, les tabliers et tout le matériel nécessaire.</p>
+      </div>
+
+      <div class="workshop-step">
+        <div class="workshop-step-number">3</div>
+        <h3>On pâtisse !</h3>
+        <p>Je vous guide pas à pas dans une ambiance conviviale et accessible à toutes.</p>
+      </div>
+
+      <div class="workshop-step">
+        <div class="workshop-step-number">4</div>
+        <h3>Vous profitez</h3>
+        <p>Dégustez votre création ensemble ou repartez fièrement avec votre dessert.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- POURQUOI VOUS ALLEZ ADORER L'EXPÉRIENCE              -->
+<!-- ===================================================== -->
+
+<section class="why-experience-section">
+    <div class="container">
+        <div class="row why-experience-row">
+
+            <div class="col-md-6">
+
+                <div class="why-photo-collage">
+
+                    <img
+                        src="images/activite_evjf_patisserie.jpeg"
+                        class="why-photo-main"
+                        loading="lazy"
+                        alt="Atelier Letter Cake pour EVJF à Montréal">
+
+                    <img
+                        src="images/evjf_patisserie.jpg"
+                        class="why-photo-small"
+                        loading="lazy"
+                        alt="Letter Cake réalisé pendant un atelier EVJF à Montréal">
+
+                    <img
+                        src="images/baby_shower_montreal.jpg"
+                        class="why-photo-small"
+                        loading="lazy"
+                        alt="Atelier pâtisserie privé entre amies à Montréal">
+
+                </div>
+
+            </div>
+
+            <div class="col-md-5 col-md-offset-1">
+
+                <span class="why-experience-kicker">
+                    Mon atelier signature 
+                </span>
+
+                <h2 class="why-experience-title">
+                    Pourquoi vous allez adorer l'expérience
+                </h2>
+
+                <div class="why-benefits">
+
+                    <div class="why-benefit">
+                        <span class="why-benefit-title">
+                            👩‍🍳 Accessible à toutes
+                        </span>
+                        <p>
+                            Débutantes comme passionnées, chacune participe à son rythme.
+                            Je vous guide pas à pas et vous partage mes astuces de cheffe professionnelle.
+                        </p>
+                    </div>
+
+                    <div class="why-benefit">
+                        <span class="why-benefit-title">
+                            ✨ Entièrement sur mesure
+                        </span>
+                        <p>
+                            Dessert, thème, prénom de la star du jour : l'atelier s'adapte
+                            à votre EVJF, baby shower, anniversaire ou fête.
+                        </p>
+                    </div>
+
+                    <div class="why-benefit">
+                        <span class="why-benefit-title">
+                            🧁 De vraies techniques
+                        </span>
+                        <p>
+                            Apprenez notamment à maîtriser la poche à douille et repartez
+                            avec des gestes que vous pourrez reproduire chez vous.
+                        </p>
+                    </div>
+
+                    <div class="why-benefit">
+                        <span class="why-benefit-title">
+                            🍫 Formule tout inclus
+                        </span>
+                            J'apporte les ingrédients et le matériel professionnel directement
+                            à domicile ou directement sur le lieu de votre événement, à Montréal et ses environs.
+                        </p>
+                    </div>
+
+                    <div class="why-benefit why-price">
+                        <span class="why-benefit-title">
+                            💰 Tarif
+                        </span>
+                        <span class="why-price-value">
+                            À partir de 75 $ / personne
+                        </span>
+                    </div>
+
+                </div>
+
+                <a href="contact-EVJF.html" class="why-cta">
+                    Vérifier les disponibilités →
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+    <!-- ===================================================== -->
+    <!-- GALERIE : 1 LIGNE DE 4 PHOTOS                         -->
+    <!-- ===================================================== -->
+    <section class="gallery-before-custom" style="padding:55px 0 65px;background:#fff;">
+        <div class="container">
+            <div class="moodboard-gallery" style="margin:0;">
+                <img src="images/evjf_montreal.jpg"
+                     loading="lazy"
+                     alt="Atelier pâtisserie EVJF à Montréal">
+                <img src="images/evjf_patisserie_montréal.JPG"
+                     loading="lazy"
+                     alt="Atelier pâtisserie entre amies à Montréal">
+                <img src="images/bachelorette_patisserie.jpg"
+                     loading="lazy"
+                     alt="Idée activité EVJF à Montréal">
+                <img src="images/atelier_evjf_montréal.jpg"
+                     loading="lazy"
+                     alt="Bachelorette party et atelier pâtisserie à Montréal">
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTRES IDÉES -->
+    <section class="custom-idea-section" style="padding:75px 0 55px;background:#fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <span class="section-kicker">Et selon vos envies...</span>
+                    <h2 class="landing-title">Vous avez une autre idée en tête ?</h2>
+                    <p class="landing-text">
+                        Chaque événement est différent : cupcakes sur le thème Harry Potter,
+                        Forêt-Noire ou tout autre dessert qui vous fait envie.
+                        Nous pouvons imaginer ensemble un atelier qui vous ressemble.
+                    </p>
+                    <p class="landing-text" style="margin-bottom:30px;">
+                        Écrivez-moi simplement avec votre idée, votre thème ou votre pâtisserie préférée
+                        et nous verrons ensemble comment la transformer en atelier.
+                    </p>
+                    <a href="contact-EVJF.html" class="landing-btn">Échanger sur votre idée →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- GALERIE : 1 LIGNE DE 4 PHOTOS APRÈS AUTRES IDÉES      -->
+    <!-- ===================================================== -->
+    <section class="gallery-after-custom" style="padding:10px 0 70px;background:#fff;">
+        <div class="container">
+            <div class="moodboard-gallery" style="margin:0;">
+                <img src="images/evjf_montréal.jpg" loading="lazy"
+                     alt="Enterrement de vie de jeune fille à Montréal">
+                <img src="images/harry_potter_pâtisserie.JPG" loading="lazy"
+                     alt="Atelier pâtisserie personnalisé à Montréal">
+                <img src="images/atelier_harry_potter.JPG" loading="lazy"
+                     alt="Cupcakes harry potter pour un atelier pâtisserie">
+                <img src="images/atelier_patisserie_bachelorette_montreal.JPG" loading="lazy"
+                     alt="Activité pâtisserie pour EVJF, baby shower ou anniversaire à Montréal">
+            </div>
+        </div>
+    </section>
 
 
 
-				</div>
-			</div>
+</section>
 
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					
-					<p>
-						<ul class="fh5co-social-icons" style="display: flex; gap: 10px; align-items: center; justify-content: center; padding: 0; margin: 0;">
-    <li style="list-style: none; margin: 0; padding: 0;">
-        <a href="https://www.facebook.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
-            <img src="images/facebook_lcdbor.png" alt="Facebook" style="width:18px; height:18px; display:inline-block; vertical-align:middle;">
-        </a>
-    </li>
-    <li style="list-style: none; margin: 0; padding: 0;">
-        <a href="https://www.instagram.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
-            <i class="icon-instagram" style="font-size:18px; vertical-align:middle;"></i>
-        </a>
-    </li>
-</ul>
-					</p>
-				</div>
-			</div>
+ <!-- Encart de Réassurance : L'Expertise TV & Grands Chefs -->
+    <section class="reassurance-box-side">
+        <div class="container">
+            <div class="reassurance-side-layout">
 
-		</div>
-	</footer>
-	</div>
+                <img
+                    src="images/pascaline_le_meilleur_patissier.JPG"
+                    loading="lazy"
+                    class="reassurance-photo-left"
+                    alt="Pascaline, pâtissière et formatrice">
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
-	<style>
-	#carousel-pastry .item img {
-    height: 400px;
-    object-fit: cover;
-}
-/* Couleur des points Owl Carousel */
-.owl-dots .owl-dot span {
-  background: #8BA6B1 !important;   /* points inactifs */
-  opacity: 1;
-}
-.owl-dots .owl-dot.active span {
-  background: #d9a545 !important;   /* point actif */
-}
-	</style>
+                <div class="reassurance-side-copy">
+                    <span class="section-kicker">L'expertise au service de votre événement</span>
 
-	</body>
+                    <h3>
+                        L'excellence de la pâtisserie professionnelle à domicile
+                    </h3>
+
+                    <p>
+                        Ayant formé plus de 5 000 élèves, exercé aux côtés de chefs renommés
+                        comme <strong>Gordon Ramsay</strong> et <strong>Philippe Etchebest</strong>,
+                        et partagé ma passion sur le plateau de l'émission
+                        <strong>Le Meilleur Pâtissier</strong>, je vous propose une activité
+                        originale, ludique et chaleureuse pour votre EVJF, baby shower,
+                        anniversaire ou fête à Montréal et ses environs.
+                    </p>
+                </div>
+
+                <img
+                    src="images/Le_meilleur_patissier.jpg"
+                    loading="lazy"
+                    class="reassurance-photo-right"
+                    alt="Expérience de Pascaline dans Le Meilleur Pâtissier">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/gallery-4.jpg);" role="contentinfo">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row row-pb-md">
+                <div class="col-md-12 fh5co-widget" style="text-align: center;">
+                    <h3>Atelier pâtisserie de groupe : EVJF, bachelorette party, baby shower, anniversaire à Montréal</h3>
+                    <p>Depuis 2018, j'anime des cours et ateliers de pâtisserie fédérateurs et gourmands à Montréal et ses environs. Offrez une expérience inoubliable pour vos fêtes entre amies.</p>
+                    <p><a class="btn btn-primary" href="contact-EVJF.html">Demandez votre devis gratuit</a></p>
+                </div>
+            </div>
+
+            <div class="row copyright">
+                <div class="col-md-12 text-center">
+                    <ul class="fh5co-social-icons" style="display: flex; gap: 10px; align-items: center; justify-content: center; padding: 0; margin: 0;">
+                        <li style="list-style: none; margin: 0; padding: 0;">
+                            <a href="https://www.facebook.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
+                                <img src="images/facebook_lcdbor.png" alt="Facebook" style="width:18px; height:18px; display:inline-block; vertical-align:middle;">
+                            </a>
+                        </li>
+                        <li style="list-style: none; margin: 0; padding: 0;">
+                            <a href="https://www.instagram.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
+                                <i class="icon-instagram" style="font-size:18px; vertical-align:middle;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+    
+    <!-- Scripts JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
 </html>
-
