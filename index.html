@@ -1,13 +1,30 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr-CA">
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>La Crème des Bordelaises &mdash; Cours de pâtisserie à Montréal</title>
+    <title>Atelier et cours de pâtisserie à Montréal | La Crème des Bordelaises</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cours de pâtisserie Montréal, team building, consolidation d'équipe" />
-    <meta name="keywords" content="atelier pâtisserie, cours pâtisserie, team building, consolidation d'équipe, groupe, montréal, mtl, evjf, babyshower, idée activité" />
-    <meta name="author" content="la crème des bordelaises" />
+    <meta name="description" content="Une cheffe formée chez Gordon Ramsay vient chez vous ou dans vos locaux : team building, party de Noël, EVJF, shower de bébé et cours privés à domicile à Montréal. 5,0 ★ sur Google." />
+    <!-- Icône d'onglet (favicon) -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-48.png" type="image/png" sizes="48x48">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="author" content="La Crème des Bordelaises" />
+    <link rel="canonical" href="https://www.lacremedesbordelaises.com/" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_CA" />
+    <meta property="og:title" content="Atelier et cours de pâtisserie à Montréal — La Crème des Bordelaises"/>
+    <meta property="og:image" content="https://www.lacremedesbordelaises.com/images/party-noel-atelier-patisserie-bureaux-montreal.jpg"/>
+    <meta property="og:url" content="https://www.lacremedesbordelaises.com/"/>
+    <meta property="og:site_name" content="La Crème des Bordelaises"/>
+    <meta property="og:description" content="Team building, party de Noël, EVJF et cours privés à domicile à Montréal, avec une cheffe pâtissière formée chez Gordon Ramsay et Philippe Etchebest."/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Atelier et cours de pâtisserie à Montréal" />
+    <meta name="twitter:image" content="https://www.lacremedesbordelaises.com/images/party-noel-atelier-patisserie-bureaux-montreal.jpg" />
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
@@ -28,6 +45,171 @@
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+        /* Supprime le fond gris derrière le texte du header */
+        #fh5co-header .display-tc {
+            background: transparent !important;
+        }
+
+        /* Ajustements mobiles pour les encarts des 3 piliers */
+        @media (max-width: 768px) {
+            .pillar-card {
+                padding: 20px 15px !important;
+            }
+        }
+
+        /* Grille de tarifs dégressifs */
+        .price-grid { width: 100%; border-collapse: collapse; margin: 10px 0 6px 0; font-size: 14px; }
+        .price-grid th, .price-grid td { font-size: 14px; line-height: 1.4; padding: 8px 10px; border-bottom: 1px solid #f3e2c3; text-align: left; color: #513c21; }
+        .price-grid th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #513c21; }
+        .price-grid td.pg-price { font-weight: 700; color: #d9a545; text-align: right; font-size: 15px !important; line-height: 1.4 !important; }
+        .price-grid th.pg-price { text-align: right; }
+
+        /* Bandeau infos pratiques */
+        .info-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 28px; font-size: 15px; color: #513c21; }
+        .info-bar span { white-space: nowrap; }
+
+        /* FAQ en accordéon (sans JavaScript) */
+        .faq-item { background: #fff; border: 1px solid #f3e2c3; border-radius: 8px; margin-bottom: 12px; }
+        .faq-item summary { cursor: pointer; padding: 16px 20px; font-weight: 700; color: #513c21; font-size: 15px; list-style: none; position: relative; padding-right: 45px; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: "+"; position: absolute; right: 20px; top: 12px; font-size: 22px; color: #d9a545; }
+        .faq-item[open] summary::after { content: "–"; }
+        .faq-item p { padding: 0 20px 18px 20px; margin: 0; font-size: 15px; line-height: 1.7; color: #513c21; }
+
+        /* Logos clients */
+        .client-logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 25px 40px; }
+        .client-logos img { max-height: 55px; max-width: 120px; width: auto; filter: grayscale(100%); opacity: 0.8; }
+        /* Sécurités mobile */
+        @media (max-width: 991px) {
+            .row[style*="display: flex"] > [class*="col-md-"] { width: 100%; flex: 0 0 100%; }
+        }
+        @media (max-width: 480px) {
+            .grid-2-mobile-1 { grid-template-columns: 1fr !important; }
+            .info-bar { gap: 8px 16px; font-size: 13px; }
+            .info-bar span { white-space: normal; }
+        }
+        /* Bouton retour en haut : religieuse */
+        .gototop a { display: flex !important; flex-direction: column; align-items: center; justify-content: center; background: #f9f5f0 !important; border: 2px solid #513c21; box-shadow: 0 4px 12px rgba(0,0,0,0.2); width: 60px !important; height: 74px !important; border-radius: 30px !important; text-decoration: none !important; }
+        .gototop-label { font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-size: 10px; font-weight: 700; color: #513c21; letter-spacing: 0.5px; text-transform: uppercase; line-height: 1; margin-top: 2px; }
+        .gototop a:hover svg { transform: translateY(-3px); transition: transform 0.2s; }
+        /* Étoile scintillante (remplace l'émoji) */
+        .twinkle { animation: twinkle 2.4s ease-in-out infinite; transform-origin: center; }
+        @keyframes twinkle { 0%,100% { opacity: 1; transform: scale(1) rotate(0deg); } 50% { opacity: 0.55; transform: scale(0.8) rotate(15deg); } }
+        @media (prefers-reduced-motion: reduce) { .twinkle { animation: none; } }
+        /* Accueil */
+        .reassure h3 { color: #fff; font-size: 18px; font-weight: 700; margin: 0 0 4px 0; }
+        .reassure p { font-size: 14px; margin: 0; color: #f3e2c3; line-height: 1.4; }
+        .reassure .col-md-3 { margin: 12px 0; }
+        #fh5co-logo a { font-size: 16px !important; white-space: nowrap !important; }
+        @media (max-width: 767px) {
+                }
+    </style>
+    <style>
+        .xmas-box { position: relative; overflow: hidden; background-color: #a3191f;
+            background-image: linear-gradient(90deg, rgba(0,0,0,0.55) 50%, transparent 50%), linear-gradient(rgba(0,0,0,0.55) 50%, transparent 50%);
+            background-size: 44px 44px; padding: 70px 0 60px 0; }
+        .xmas-garland { position: absolute; top: 0; left: 0; right: 0; height: 14px;
+            background: radial-gradient(circle at 12px 4px, #d9a545 5px, transparent 5.5px) 0 0 / 72px 14px repeat-x,
+                        radial-gradient(circle at 36px 7px, #f9f5f0 5px, transparent 5.5px) 0 0 / 72px 14px repeat-x,
+                        radial-gradient(circle at 60px 4px, #AAB89C 5px, transparent 5.5px) 0 0 / 72px 14px repeat-x; }
+        .xmas-garland::before { content: ""; position: absolute; top: 0; left: 0; right: 0; border-top: 2px solid rgba(243,226,195,0.5); }
+        .xmas-card { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; text-align: center;
+            border: 2px solid #a3191f; border-radius: 12px; padding: 35px 30px; background: #fffaf2; box-shadow: 0 10px 28px rgba(0,0,0,0.35); }
+        .xmas-tree { position: absolute; bottom: 20px; z-index: 1; opacity: 0.9; }
+        .xmas-tree.left { left: 4%; } .xmas-tree.right { right: 4%; }
+        .xmas-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 20px 0 5px 0; }
+        .xmas-chips span { background: #f4ead8; color: #2e4a36; border-radius: 20px; padding: 7px 16px; font-size: 14px; font-weight: 700; }
+        @media (max-width: 991px) { .xmas-tree { display: none; } .xmas-card { padding: 28px 18px; } }
+    </style>
+
+    <!-- Données structurées : entreprise (site officiel) + FAQ -->
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "@id": "https://www.lacremedesbordelaises.com/#entreprise",
+ "name": "La Crème des Bordelaises",
+ "url": "https://www.lacremedesbordelaises.com/",
+ "description": "Ateliers et cours de pâtisserie à Montréal : team building, party de Noël d'entreprise, enterrements de vie de fille, showers de bébé et cours privés à domicile.",
+ "email": "lacremedesbordelaises@gmail.com",
+ "image": "https://www.lacremedesbordelaises.com/images/party-noel-atelier-patisserie-bureaux-montreal.jpg",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Montréal",
+  "addressRegion": "QC",
+  "addressCountry": "CA"
+ },
+ "areaServed": [
+  "Montréal",
+  "Laval",
+  "Longueuil",
+  "Grand Montréal"
+ ],
+ "availableLanguage": [
+  "fr",
+  "en"
+ ],
+ "founder": {
+  "@type": "Person",
+  "name": "Pascaline Camblong",
+  "jobTitle": "Cheffe pâtissière"
+ },
+ "sameAs": [
+  "https://www.instagram.com/lacremedesbordelaises/",
+  "https://www.facebook.com/lacremedesbordelaises/"
+ ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Où vous déplacez-vous ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Partout sur l'île de Montréal, sans frais de déplacement. Je me déplace aussi à Laval, sur la Rive-Sud, sur la Rive-Nord et au-delà, avec des frais de déplacement indiqués dans votre soumission."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Faut-il une cuisine équipée ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Non. Pour les ateliers de groupe, un point d'eau et des tables suffisent : j'apporte tout le matériel, les ingrédients et les tabliers. Pour les cours privés à domicile, nous utilisons votre four, pour que vous puissiez refaire la recette facilement ensuite."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Combien de personnes peuvent participer ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "De 1 personne pour un cours privé jusqu'aux grands groupes d'entreprise : au-delà de 50 participants, j'adapte simplement l'organisation de l'atelier. Les ateliers de groupe se font à partir de 4 participants."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Les ateliers peuvent-ils se faire en anglais ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui, j'anime en français ou en anglais, et je peux passer de l'un à l'autre pour les groupes bilingues."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Peut-on offrir un atelier en cadeau ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui : un cours de pâtisserie privé est une idée cadeau originale pour un anniversaire, Noël ou un départ à la retraite. Écrivez-moi et nous préparons ensemble la carte-cadeau."
+   }
+  }
+ ]
+}
+    </script>
 
     <!-- ========================================== -->
     <!-- TRACKING MICROSOFT CLARITY                 -->
@@ -51,27 +233,26 @@
 
       gtag('config', 'G-3QC4BR9BK6');
     </script>
-
     </head>
     <body>
-        
+
     <div class="fh5co-loader"></div>
-    
+
     <div id="page">
-    <nav class="fh5co-nav" role="navigation">
+    <nav class="fh5co-nav" role="navigation" style="position: relative; z-index: 1000;">
         <div class="top">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 text-right top-bar-custom">
-                        <span style="font-size: 12px; color: #f3e2c3;">Lacremedesbordelaises@gmail.com</span>
+                    <div class="col-xs-12 text-right" style="display: flex; align-items: center; justify-content: flex-end; gap: 12px;">
+                        <a href="mailto:lacremedesbordelaises@gmail.com" style="font-size: 12px; color: #f3e2c3;">lacremedesbordelaises@gmail.com</a>
                         <ul class="fh5co-social" style="display: flex; gap: 8px; align-items: center; padding: 0; margin: 0;">
                             <li style="list-style: none; margin: 0; padding: 0;">
-                                <a href="https://www.instagram.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
+                                <a href="https://www.instagram.com/lacremedesbordelaises/" target="_blank" rel="noopener" aria-label="Instagram" style="display: flex; align-items: center;">
                                     <i class="icon-instagram" style="font-size:18px;"></i>
                                 </a>
                             </li>
                             <li style="list-style: none; margin: 0; padding: 0;">
-                                <a href="https://www.facebook.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
+                                <a href="https://www.facebook.com/lacremedesbordelaises/" target="_blank" rel="noopener" style="display: flex; align-items: center;">
                                     <img src="images/facebook_lcdb.png" alt="Facebook" style="width:18px; height:18px; display:block;">
                                 </a>
                             </li>
@@ -84,17 +265,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
-                        <div id="fh5co-logo"><a href="index.html">La Crème Des Bordelaises<span>.</span></a></div>
+                        <div id="fh5co-logo"><a href="/">La Crème Des Bordelaises<span>.</span></a></div>
                     </div>
                     <div class="col-xs-10 text-right menu-1">
                         <ul>
-                            <li class="active"><a href="index.html">Accueil</a></li>
-                            <li><a href="teambuilding.html">Team building</a></li>
+                            <li class="active"><a href="/">Accueil</a></li>
                             <li class="has-dropdown">
-                                <a href="cursor: pointer;">Particulier</a>
+                                <a href="teambuilding.html">Team building</a>
                                 <ul class="dropdown">
-                                    <li><a href="evjf_babyshower.html">EVJF / Babyshower</a></li>
-                                    <li><a href="atelier-domicile.html">Atelier à domicile</a></li>
+                                    <li><a href="teambuilding.html">Team building pâtisserie</a></li>
+                                    <li><a href="party-noel.html">Party de Noël d'entreprise</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a href="javascript:void(0);">Particulier</a>
+                                <ul class="dropdown">
+                                    <li><a href="evjf_babyshower.html">EVJF / Shower de bébé</a></li>
+                                    <li><a href="atelier-domicile.html">Cours privé à domicile</a></li>
                                 </ul>
                             </li>
                             <li><a href="quisuisje.html">Qui suis-je?</a></li>
@@ -107,7 +294,7 @@
     </nav>
 
     <!-- HEADER -->
-    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/atelier\ pâtisserie\ bandeau\ site.png); background-size: cover; background-position: center; position: relative;" data-stellar-background-ratio="0.5">
+    <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url('images/atelier pâtisserie bandeau site.png'); background-size: cover; background-position: center; position: relative;" data-stellar-background-ratio="0.5">
         <div class="container" style="height: 100%; position: relative; z-index: 2;">
             <div class="row header-row-custom" style="height: 100%; display: flex; align-items: flex-start; justify-content: flex-end; padding-top: 40px;">
                 <div class="col-md-6 text-center" style="padding: 10px;">
@@ -116,13 +303,13 @@
                             <img src="images/La Crème logo rond blanc sans fond.png" alt="Logo La Crème des Bordelaises" class="header-logo-custom" style="width: 120px; height: auto; display: inline-block;">
                         </div>
                         <h1 style="font-size: 20px; line-height: 1.3; color: #ffffff; font-weight: 700; margin-bottom: 10px; text-shadow: 0 1px 3px rgba(0,0,0,0.6);">
-                            Atelier de pâtisserie en groupe, Team Building &amp; cours privés à domicile sur le Grand Montréal
+                            Atelier et cours de pâtisserie à Montréal : team building, EVJF &amp; cours privés à domicile
                         </h1>
                         <p style="color: #f3e2c3; font-size: 13px; margin-bottom: 15px; line-height: 1.4; text-shadow: 0 1px 2px rgba(0,0,0,0.6);">
                             Vivez une expérience gourmande d'exception pour vos événements, EVJF ou séminaires d'entreprise à Montréal et ses alentours.
                         </p>
                         <p style="margin: 0;">
-                            <a href="contact.html" class="btn btn-primary btn-lg btn-custom-cta" style="padding: 10px 20px; font-size: 17px; font-weight: 600; background-color: #d4af37; border-color: #d4af37; color: #fff;">Vérifiez les disponibilités &amp; parlons de votre projet</a>
+                            <a href="contact.html" class="btn btn-primary btn-lg btn-custom-cta" style="padding: 10px 20px; font-size: 17px; font-weight: 600; background-color: #d9a545; border-color: #d9a545; color: #513c21;">Vérifiez les disponibilités &amp; parlons de votre projet</a>
                         </p>
                     </div>
                 </div>
@@ -133,28 +320,31 @@
     <!-- SERVICES -->
     <div id="fh5co-services" class="fh5co-bg-section" style="padding: 50px 0 20px 0;">
         <div class="container">
-            <div class="row">
+            <div class="row services-row">
                 <div class="col-md-4 text-center animate-box service-box-custom">
                     <div class="services">
-                        <span><img class="img-responsive center-block" src="images/team building montreal.svg" alt="Team Building"></span>
                         <h3>Team Building / activité corporative</h3>
-                        <p>Partagez une activité originale et gourmande : le team cooking.<br> Fédérez vos collaborateurs autour d'un atelier de pâtisserie d'entreprise original et gourmand. Grand Montréal et environs</p>
+                        <p>Une activité de consolidation d'équipe gourmande : vos collègues créent ensemble un gâteau à leur nom, guidés par une cheffe. Dans vos locaux, petits comités comme grands groupes.</p>
+                        <div class="svc-photo"><img src="images/party-noel-atelier-patisserie-bureaux-montreal.jpg" alt="Équipe réunie autour des tables pour un atelier de pâtisserie dans ses bureaux à Montréal" loading="lazy" style="object-position: center 40%;"></div>
+                        <p class="svc-from">Dès 75 $ par personne</p>
                         <p><a href="teambuilding.html" class="btn btn-primary btn-outline btn-sm">Découvrir l'offre Team Building <i class="icon-arrow-right"></i></a></p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center animate-box service-box-custom">
                     <div class="services">
-                        <span><img class="img-responsive center-block" src="images/EVJF Montreal dessin.svg" alt="EVJF Montreal"></span>
                         <h3>EVJF - Bachelorette party <br> Babyshower</h3>
-                        <p>Offrez à la future mariée ou future maman un cours de pâtisserie inoubliable. <br> Une activité créative et ultra-gourmande, disponible en privatisation à domicile. <br> Sur Montréal et ses alentours.</p>
+                        <p>Enterrement de vie de fille, shower de bébé ou anniversaire : offrez à la star du jour un atelier de pâtisserie inoubliable entre amies, chez vous ou sur le lieu de votre fête.</p>
+                        <div class="svc-photo"><img src="images/atelier-patisserie-evjf-entre-amies.jpg" alt="Groupe d'amies souriantes avec leurs parts de gâteau lors d'un atelier de pâtisserie pour un EVJF" loading="lazy" style="object-position: center 45%;"></div>
+                        <p class="svc-from">Dès 75 $ par personne</p>
                         <p><a href="evjf_babyshower.html" class="btn btn-primary btn-outline btn-sm">En savoir plus <i class="icon-arrow-right"></i></a></p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center animate-box service-box-custom">
                     <div class="services">
-                        <span><img class="img-responsive center-block" src="images/toque.svg" alt="Cours de pâtisserie"></span>
                         <h3>Ateliers privés &amp; Cours pâtisserie à domicile</h3>
-                        <p>Pour vous ou à offrir craquez pour un cadeau original. <br> Progresser comme un pro: cours de pâtisserie sur-mesure à domicile pour maîtriser des techniques spécifiques.</p>
+                        <p>Pour vous ou à offrir : un cours de pâtisserie sur mesure dans votre cuisine, en solo, en duo ou en famille. Macarons, choux, tartes… apprenez la recette de vos rêves.</p>
+                        <div class="svc-photo"><img src="images/cours-patisserie-prive-tarte-framboises.jpg" alt="Participante souriante qui zeste le citron sur sa tarte aux framboises pendant un cours de pâtisserie privé" loading="lazy" style="object-position: center 60%;"></div>
+                        <p class="svc-from">Dès 230 $ pour 1 ou 2 personnes</p>
                         <p><a href="atelier-domicile.html" class="btn btn-primary btn-outline btn-sm">Réserver mon cours privé <i class="icon-arrow-right"></i></a></p>
                     </div>
                 </div>
@@ -162,123 +352,296 @@
         </div>
     </div>
 
-    <!-- BANDEAU DE RÉASSURANCE 4 POINTS CLÉS -->
-    <div class="container-fluid" style="background-color: #513c21; color: #f3e2c3; border-top: 2px solid #d4af37; border-bottom: 2px solid #d4af37; margin: 0;">
-        <div class="container" style="padding: 15px 0;">
-            <div class="row text-center reassurance-row">
-                <div class="col-md-3 col-sm-6 reassurance-col">
-                    <i class="icon-star" style="font-size: 30px; color: #d4af37; display: block; margin-bottom: 10px;"></i>
-                    <h4 style="color: #ffffff; font-size: 18px; font-weight: 700; margin-bottom: 4px;">Formation Grands Chefs</h4>
-                    <p style="font-size: 14px; margin: 0; color: #e0d0b0; line-height: 1.3;">Gordon Ramsay, Philippe Etchebest</p>
+
+    <!-- Bandeau infos pratiques -->
+    <div style="background: #f9f5f0; border-top: 1px solid #f3e2c3; border-bottom: 1px solid #f3e2c3; padding: 18px 0;">
+        <div class="container">
+            <div class="info-bar">
+                <span>📍 Déplacement inclus sur l'île de Montréal</span>
+                <span>🍳 Aucune cuisine nécessaire pour les groupes</span>
+                <span>🗣 Français ou anglais</span>
+                <span>✉️ Soumission gratuite sous 24 h</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ========================================== -->
+    <!-- BANDEAU DE RÉASSURANCE -->
+    <!-- ========================================== -->
+    <div class="reassure" style="background-color: #513c21; border-top: 3px solid #d9a545; border-bottom: 3px solid #d9a545;">
+        <div class="container" style="padding: 22px 15px;">
+            <div class="row text-center" style="display: flex; flex-wrap: wrap; align-items: center;">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div style="font-size: 26px; color: #d9a545; margin-bottom: 6px;">★</div>
+                    <h3>Formée chez de grands chefs</h3>
+                    <p>Gordon Ramsay, Philippe Etchebest</p>
                 </div>
-                <div class="col-md-3 col-sm-6 reassurance-col" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                    <div style="height: 28px; display: flex; align-items: center;margin-top: 30px;">
-                        <img src="images/LOGO-le-meilleur-patissier-pro.png" style="max-height: 80px; width: auto; display: block;" alt="Le Meilleur Pâtissier Pro">
-                    </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <img src="images/LOGO-le-meilleur-patissier-pro.png" alt="Le Meilleur Pâtissier – Les Professionnels (M6)" style="max-height: 70px; width: auto; display: inline-block;">
+                    <p style="margin-top: 6px;">Candidate du concours télévisé (M6)</p>
                 </div>
-                <div class="col-md-3 col-sm-6 reassurance-col">
-                    <i class="icon-heart" style="font-size: 30px; color: #d4af37; display: block; margin-bottom: 10px;"></i>
-                    <h4 style="color: #ffffff; font-size: 18px; font-weight: 700; margin-bottom: 4px;">+ 5 000 Élèves</h4>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div style="font-size: 26px; color: #d9a545; margin-bottom: 6px;">♥</div>
+                    <h3>Plus de 5 000 élèves</h3>
+                    <p>depuis 2018, en France et au Québec</p>
                 </div>
-                <div class="col-md-3 col-sm-6 reassurance-col">
-                    <div style="color: #f39c12; font-size: 30px; margin-bottom: 8px; letter-spacing: 2px;">
-                        ★★★★★
-                    </div>
-                    <h4 style="color: #ffffff; font-size: 18px; font-weight: 700; margin-bottom: 4px;">5,0 sur Google</h4>
-                    <p style="font-size: 12px; margin: 0; color: #e0d0b0; line-height: 1.3;">plus de 240 avis</p>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div style="color: #d9a545; font-size: 24px; letter-spacing: 2px; margin-bottom: 6px;">★★★★★</div>
+                    <h3>5,0 sur Google</h3>
+                    <p>plus de 240 avis</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- MANIFESTO -->
-    <div id="fh5co-manifesto" style="padding: 60px 20px; background-color: #faf8f5; text-align: center;">
+    <!-- ========================================== -->
+    <!-- AVIS -->
+    <!-- ========================================== -->
+    <section style="padding: 60px 0 40px 0; background-color: #f9f5f0;">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 animate-box">
-                    <span style="text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: #d4af37; font-weight: 600; display: block; margin-bottom: 10px;">L'excellence à votre service</span>
-                    <h2 style="font-size: 26px; font-weight: 700; color: #513c21; margin-bottom: 30px; line-height: 1.4;">
-                        Pourquoi vos événements méritent une vraie chef pâtissière ?
-                    </h2>
-                    <p style="font-size: 16px; color: #555; line-height: 1.8; margin-bottom: 30px; max-width: 850px; margin-left: auto; margin-right: auto;">
-                        Formée auprès de chefs étoilés (dont <strong>Gordon Ramsay et Philippe Etchebest</strong>) et passée par l'exigeante émission<strong> <em>Le Meilleur Pâtissier – Les Professionnels</em></strong>, je mets<strong> 8 ans d'expérience </strong> pâtisserie au service de vos projets à Montréal. Qu'il s'agisse d'un team building d'entreprise ou d'un EVJF à domicile, je vous garantis une formule clé en main, créative, mémorable et gourmande.
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #513c21; text-transform: uppercase;">★★★★★ 5,0 sur Google</span>
+                    <h2 style="font-size: 28px; color: #513c21; font-weight: 700; margin: 8px 0 25px 0;">Ce qu'en disent mes élèves</h2>
+                    <div style="background: #fff; border-left: 4px solid #d9a545; border-radius: 6px; padding: 24px 26px; text-align: left; box-shadow: 0 6px 18px rgba(81,60,33,0.08);">
+                        <div style="color: #d9a545; font-size: 16px;">★★★★★</div>
+                        <p style="font-size: 16px; color: #513c21; line-height: 1.7; font-style: italic; margin: 8px 0 10px 0;">« Super expérience avec Pascaline, qui partage aussi bien son savoir-faire que son enthousiasme et sa bonne humeur ! Sans hésiter, allez-y les yeux fermés (enfin, juste un peu pour suivre l'atelier tout de même 😂), vous ne regretterez absolument pas ! Vivement le prochain atelier ! »</p>
+                        <p style="font-size: 13px; color: #513c21; font-weight: 700; margin: 0;">Emmanuelle B. <span style="font-weight: 400; color: #6b6c70;">· Avis Google</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Widget des avis Google (Featurable) -->
+        <div style="padding: 30px 15px 0 15px; text-align: center;">
+            <div id="featurable-9b504248-c053-443a-ae05-d23996fd0962" data-featurable-async data-location-code="fr"></div><script src="https://cdn.featurable.com/widget/v2/embed.js" defer charset="UTF-8"></script>
+        </div>
+    </section>
+
+    <section class="xmas-box">
+        <div class="xmas-tree left"><svg viewBox="0 0 80 110" width="80" height="110" aria-hidden="true"><text x="40" y="14" text-anchor="middle" font-size="16" fill="#d9a545">★</text><polygon points="40,18 60,48 20,48" fill="#2e4a36"/><polygon points="40,36 66,72 14,72" fill="#46644f"/><polygon points="40,56 72,96 8,96" fill="#2e4a36"/><rect x="34" y="96" width="12" height="12" fill="#6b4a2b"/><circle cx="32" cy="44" r="3" fill="#d9a545"/><circle cx="50" cy="64" r="3" fill="#fff"/><circle cx="28" cy="86" r="3" fill="#d9a545"/><circle cx="54" cy="88" r="3" fill="#fff"/></svg></div>
+        <div class="xmas-tree right"><svg viewBox="0 0 80 110" width="80" height="110" aria-hidden="true"><text x="40" y="14" text-anchor="middle" font-size="16" fill="#d9a545">★</text><polygon points="40,18 60,48 20,48" fill="#46644f"/><polygon points="40,36 66,72 14,72" fill="#2e4a36"/><polygon points="40,56 72,96 8,96" fill="#46644f"/><rect x="34" y="96" width="12" height="12" fill="#6b4a2b"/><circle cx="32" cy="44" r="3" fill="#d9a545"/><circle cx="50" cy="64" r="3" fill="#fff"/><circle cx="28" cy="86" r="3" fill="#d9a545"/><circle cx="54" cy="88" r="3" fill="#fff"/></svg></div>
+        <div class="container">
+            <div class="xmas-card">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #a3191f; text-transform: uppercase;"><svg class="twinkle" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" style="display:inline-block; vertical-align:-0.12em;"><path d="M12 1 C12.8 8 16 11.2 23 12 C16 12.8 12.8 16 12 23 C11.2 16 8 12.8 1 12 C8 11.2 11.2 8 12 1 Z" fill="#d9a545"/><path d="M19.5 2.5 C19.8 4.4 20.6 5.2 22.5 5.5 C20.6 5.8 19.8 6.6 19.5 8.5 C19.2 6.6 18.4 5.8 16.5 5.5 C18.4 5.2 19.2 4.4 19.5 2.5 Z" fill="#f9f5f0" opacity="0.9"/></svg> Nouveau pour les Fêtes <svg class="twinkle" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" style="display:inline-block; vertical-align:-0.12em;"><path d="M12 1 C12.8 8 16 11.2 23 12 C16 12.8 12.8 16 12 23 C11.2 16 8 12.8 1 12 C8 11.2 11.2 8 12 1 Z" fill="#d9a545"/><path d="M19.5 2.5 C19.8 4.4 20.6 5.2 22.5 5.5 C20.6 5.8 19.8 6.6 19.5 8.5 C19.2 6.6 18.4 5.8 16.5 5.5 C18.4 5.2 19.2 4.4 19.5 2.5 Z" fill="#f9f5f0" opacity="0.9"/></svg></span>
+                <h2 style="font-family: Georgia, serif; font-size: 30px; color: #a3191f; font-weight: 700; margin-top: 10px;">🎄 Et pour votre party de Noël d'entreprise ?</h2>
+                <p style="font-size: 16px; color: #513c21; line-height: 1.7; margin-bottom: 0;">
+                    Un atelier festif et clé en main pour célébrer la fin d'année ensemble, dans vos locaux ou dans une salle partenaire.
+                </p>
+                <div class="xmas-chips">
+                    <span>🎄 Le Sapin Puzzle</span>
+                    <span><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" style="display:inline-block; vertical-align:-0.15em;"><rect x="1" y="1" width="22" height="22" rx="6" fill="#7a1f2b"/><text x="12" y="17.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#d9a545">A</text></svg> Ou le nom de votre choix</span>
+                    <span>🎁 Dès 75 $/pers.</span>
+                </div>
+                <p style="font-size: 13px; color: #2e4a36; margin: 12px 0 18px 0;">🍳 Aucune cuisine nécessaire : de simples tables suffisent.</p>
+                <a href="party-noel.html" style="background-color: #d9a545; border: 2px solid #d9a545; color: #513c21; padding: 14px 35px; font-size: 16px; font-weight: 700; border-radius: 4px; text-decoration: none; display: inline-block; box-shadow: 0 4px 14px rgba(0,0,0,0.25);">
+                    Découvrir l'atelier de Noël <i class="icon-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- TEXTE DE PRÉSENTATION (SEO) -->
+    <!-- ========================================== -->
+    <section style="padding: 60px 0; background-color: #f9f5f0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="text-center" style="margin-bottom: 25px;">
+                        <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #513c21; text-transform: uppercase;">L'excellence à votre service</span>
+                        <h2 style="font-size: 28px; color: #513c21; font-weight: 700; margin-top: 8px;">Une vraie cheffe pâtissière pour vos événements à Montréal</h2>
+                    </div>
+                    <p style="font-size: 15px; color: #513c21; line-height: 1.8;">
+                        Je suis <strong>Pascaline Camblong</strong>, cheffe pâtissière et fondatrice de La Crème des Bordelaises. Formée dans les cuisines de <strong>Gordon Ramsay</strong> et de <strong>Philippe Etchebest</strong>, puis candidate du concours télévisé français <em>Le Meilleur Pâtissier – Les Professionnels</em>, je partage depuis 2018 les secrets de la pâtisserie française. Après plus de 5 000 élèves accompagnés à Bordeaux, l'aventure continue aujourd'hui <strong>à Montréal et dans le Grand Montréal</strong>.
                     </p>
-                    <p style="margin: 0;">
-                        <a href="quisuisje.html" class="btn btn-primary btn-outline" style="color: #513c21; border-color: #513c21;">Découvrir mon parcours complet <i class="icon-arrow-right"></i></a>
+                    <p style="font-size: 15px; color: #513c21; line-height: 1.8;">
+                        Mes <strong>ateliers de pâtisserie</strong> s'adressent aux entreprises comme aux particuliers. Pour une <strong>activité de team building</strong> ou un <strong>party de Noël d'entreprise</strong>, je viens directement dans vos bureaux, sans cuisine nécessaire. Pour un <strong>enterrement de vie de fille</strong>, une <strong>shower de bébé</strong> ou un anniversaire entre amis, j'organise un atelier privé chez vous ou sur le lieu de votre fête. Et pour progresser, mes <strong>cours de pâtisserie privés à domicile</strong> vous apprennent la recette de votre choix, en solo, en duo ou en famille, avec les enfants dès 7 ans.
+                    </p>
+                    <p style="font-size: 15px; color: #513c21; line-height: 1.8;">
+                        Chaque atelier est <strong>clé en main</strong> : j'apporte les ingrédients, le matériel et les tabliers, et je vous guide pas à pas, en français ou en anglais. Vous repartez avec votre création et la recette envoyée par courriel, pour la refaire chez vous.
+                    </p>
+                    <p class="text-center" style="margin-top: 20px;">
+                        <a href="quisuisje.html" style="color: #513c21; border: 2px solid #513c21; padding: 11px 24px; font-size: 15px; font-weight: 700; border-radius: 4px; text-decoration: none; display: inline-block;">Découvrir mon parcours <i class="icon-arrow-right"></i></a>
                     </p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- WIDGET GOOGLE REVIEWS -->
-    <div style="padding: 40px 15px; background-color: #ffffff; text-align: center;">
-        <div id="featurable-9b504248-c053-443a-ae05-d23996fd0962" data-featurable-async data-location-code="fr"></div><script src="https://cdn.featurable.com/widget/v2/embed.js" defer charset="UTF-8"></script>
-        </div>
-    </div>
-
-    <!-- SECTION LOGOS / TEAM BUILDING -->
-    <div id="fh5co-trusted" style="background: #faf8f5; padding: 50px 15px; text-align: center;">
+    <!-- ========================================== -->
+    <!-- COMMENT ÇA MARCHE -->
+    <!-- ========================================== -->
+    <section style="padding: 60px 0 35px 0; background-color: #fff;">
         <div class="container">
-            <h3 style="font-size: 16px; text-transform: uppercase; letter-spacing: 2px; color: #513c21; margin-bottom: 30px; font-weight: 700;">
-                Team Building : ils m'ont fait confiance
-            </h3>
-            <div class="row brand-row-custom">
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center brand-item"><img src="images/Microsoft.jpg" alt="Microsoft" class="brand-logo"></div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center brand-item"><img src="images/ikea.jpeg" alt="Ikea" class="brand-logo"></div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center brand-item"><img src="images/valrhona.jpg" alt="Valrhona" class="brand-logo"></div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center brand-item"><img src="images/mouton cadet.jpeg" alt="Mouton Cadet" class="brand-logo"></div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center brand-item"><img src="images/weiss.jpeg" alt="Weiss" class="brand-logo"></div>
-                <div class="col-xs-6 col-sm-4 col-md-2 text-center brand-item"><img src="images/natixis.jpg" alt="Natixis" class="brand-logo"></div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 text-center" style="margin-bottom: 30px;">
+                    <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #513c21; text-transform: uppercase;">Simple &amp; clé en main</span>
+                    <h2 style="font-size: 28px; color: #513c21; font-weight: 700; margin-top: 8px;">Comment ça se passe ?</h2>
+                </div>
+            </div>
+            <div class="row" style="display: flex; flex-wrap: wrap;">
+                <div class="col-md-4" style="margin-bottom: 25px;">
+                    <div class="pillar-card" style="background: #fff; border: 1px solid #f3e2c3; border-radius: 8px; padding: 25px 22px; height: 100%;">
+                        <div style="font-size: 28px; font-weight: 700; color: #d9a545;">1</div>
+                        <h3 style="font-size: 17px; font-weight: 700; color: #513c21;">Vous me parlez de votre projet</h3>
+                        <p style="font-size: 15px; color: #513c21; line-height: 1.6; margin: 0;">Type d'événement, date, nombre de participants, lieu et envies : quelques lignes suffisent.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 25px;">
+                    <div class="pillar-card" style="background: #fff; border: 1px solid #f3e2c3; border-radius: 8px; padding: 25px 22px; height: 100%;">
+                        <div style="font-size: 28px; font-weight: 700; color: #d9a545;">2</div>
+                        <h3 style="font-size: 17px; font-weight: 700; color: #513c21;">Je vous envoie une soumission</h3>
+                        <p style="font-size: 15px; color: #513c21; line-height: 1.6; margin: 0;">Une proposition personnalisée, gratuite et sans engagement, sous 24 h.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 25px;">
+                    <div class="pillar-card" style="background: #fff; border: 1px solid #f3e2c3; border-radius: 8px; padding: 25px 22px; height: 100%;">
+                        <div style="font-size: 28px; font-weight: 700; color: #d9a545;">3</div>
+                        <h3 style="font-size: 17px; font-weight: 700; color: #513c21;">Je viens avec tout le nécessaire</h3>
+                        <p style="font-size: 15px; color: #513c21; line-height: 1.6; margin: 0;">Ingrédients, matériel et tabliers : vous n'avez plus qu'à pâtisser et à déguster.</p>
+                    </div>
+                </div>
+            </div>
+                    <div class="text-center" style="margin-top: 10px;">
+                        <a href="contact.html" style="background-color: #d9a545; border: 2px solid #d9a545; color: #513c21; padding: 14px 35px; font-size: 16px; font-weight: 700; border-radius: 4px; text-decoration: none; display: inline-block; box-shadow: 0 4px 12px rgba(217, 165, 69, 0.3);">
+                            Demander ma soumission gratuite
+                        </a>
+                        <p style="font-size: 13px; color: #6b6c70; margin: 12px 0 0 0;">Réponse sous 24 h — Sans engagement</p>
+                    </div>
+        </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- ILS M'ONT FAIT CONFIANCE -->
+    <!-- ========================================== -->
+    <section style="padding: 50px 0; background-color: #fff; border-top: 1px solid #f3e2c3;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 30px;">
+                <h2 style="font-size: 24px; color: #513c21; font-weight: 700;">Ils m'ont fait confiance, en France et au Québec</h2>
+            </div>
+            <div class="client-logos">
+                <img src="images/Microsoft.jpg" alt="Microsoft" loading="lazy">
+                <img src="images/ikea.jpeg" alt="Ikea" loading="lazy">
+                <img src="images/valrhona.jpg" alt="Valrhona" loading="lazy">
+                <img src="images/mouton%20cadet.jpeg" alt="Mouton Cadet" loading="lazy">
+                <img src="images/weiss.jpeg" alt="Weiss" loading="lazy">
+                <img src="images/natixis.jpg" alt="Natixis" loading="lazy">
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/gallery-4.jpg); background-size: cover; background-position: center;" role="contentinfo">
+    <!-- ========================================== -->
+    <!-- FAQ -->
+    <!-- ========================================== -->
+    <section style="padding: 60px 0; background-color: #f9f5f0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="text-center" style="margin-bottom: 30px;">
+                        <span style="font-size: 12px; font-weight: 700; letter-spacing: 1.5px; color: #513c21; text-transform: uppercase;">Questions fréquentes</span>
+                        <h2 style="font-size: 28px; color: #513c21; font-weight: 700; margin-top: 8px;">Vos ateliers de pâtisserie à Montréal, en pratique</h2>
+                    </div>
+                    <details class="faq-item">
+                        <summary>Où vous déplacez-vous ?</summary>
+                        <p>Partout sur l'île de Montréal, sans frais de déplacement. Je me déplace aussi à Laval, sur la Rive-Sud, sur la Rive-Nord et au-delà, avec des frais de déplacement indiqués dans votre soumission.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Faut-il une cuisine équipée ?</summary>
+                        <p>Non. Pour les ateliers de groupe, un point d'eau et des tables suffisent : j'apporte tout le matériel, les ingrédients et les tabliers. Pour les cours privés à domicile, nous utilisons votre four, pour que vous puissiez refaire la recette facilement ensuite.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Combien de personnes peuvent participer ?</summary>
+                        <p>De 1 personne pour un cours privé jusqu'aux grands groupes d'entreprise : au-delà de 50 participants, j'adapte simplement l'organisation de l'atelier. Les ateliers de groupe se font à partir de 4 participants.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Les ateliers peuvent-ils se faire en anglais ?</summary>
+                        <p>Oui, j'anime en français ou en anglais, et je peux passer de l'un à l'autre pour les groupes bilingues.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Peut-on offrir un atelier en cadeau ?</summary>
+                        <p>Oui : un cours de pâtisserie privé est une idée cadeau originale pour un anniversaire, Noël ou un départ à la retraite. Écrivez-moi et nous préparons ensemble la carte-cadeau.</p>
+                    </details>
+                    <div class="text-center" style="margin-top: 30px;">
+                        <a href="contact.html" style="background-color: #d9a545; border: 2px solid #d9a545; color: #513c21; padding: 14px 35px; font-size: 16px; font-weight: 700; border-radius: 4px; text-decoration: none; display: inline-block; box-shadow: 0 4px 12px rgba(217, 165, 69, 0.3);">
+                            Parler de mon projet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/gallery-4.jpg);" role="contentinfo">
         <div class="overlay"></div>
-        <div class="container" style="position: relative; z-index: 2;">
+        <div class="container">
             <div class="row row-pb-md">
                 <div class="col-md-12 fh5co-widget" style="text-align: center;">
-                    <h3>Atelier pâtisserie groupe : team building / consolidation d'équipe, EVJF, anniversaire, baby shower - Montréal</h3>
+                    <h2 style="font-size: 20px;">Atelier de pâtisserie de groupe à Montréal : team building, party de Noël, enterrement de vie de fille, shower de bébé et cours privés à domicile</h2>
+                    <p><a class="btn btn-primary" href="contact.html">Demandez votre soumission</a></p>
                 </div>
             </div>
+
             <div class="row copyright">
                 <div class="col-md-12 text-center">
-                    <p>
-                        <ul class="fh5co-social-icons" style="display: flex; gap: 10px; align-items: center; justify-content: center; padding: 0; margin: 0;">
-                            <li style="list-style: none; margin: 0; padding: 0;">
-                                <a href="https://www.facebook.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
-                                    <img src="images/facebook_lcdbor.png" alt="Facebook" style="width:18px; height:18px; display:inline-block; vertical-align:middle;">
-                                </a>
-                            </li>
-                            <li style="list-style: none; margin: 0; padding: 0;">
-                                <a href="https://www.instagram.com/lacremedesbordelaises/" target="_blank" style="display: flex; align-items: center;">
-                                    <i class="icon-instagram" style="font-size:18px; vertical-align:middle;"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </p>
+                    <ul class="fh5co-social-icons" style="display: flex; gap: 10px; align-items: center; justify-content: center; padding: 0; margin: 0;">
+                        <li style="list-style: none; margin: 0; padding: 0;">
+                            <a href="https://www.facebook.com/lacremedesbordelaises/" target="_blank" rel="noopener" style="display: flex; align-items: center;">
+                                <img src="images/facebook_lcdbor.png" alt="Facebook" style="width:18px; height:18px; display:inline-block; vertical-align:middle;">
+                            </a>
+                        </li>
+                        <li style="list-style: none; margin: 0; padding: 0;">
+                            <a href="https://www.instagram.com/lacremedesbordelaises/" target="_blank" rel="noopener" aria-label="Instagram" style="display: flex; align-items: center;">
+                                <i class="icon-instagram" style="font-size:18px; vertical-align:middle;"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
         </div>
     </footer>
     </div>
 
     <div class="gototop js-top">
-        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+        <a href="#" class="js-gotop" aria-label="Remonter en haut de la page" title="Remonter en haut"><svg aria-hidden="true" style="display:block;" xmlns="http://www.w3.org/2000/svg" viewBox="6 5 52 60" width="34" height="39"><defs>
+<radialGradient id="btnc" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#f4cf7e"/><stop offset="0.6" stop-color="#e2a948"/><stop offset="1" stop-color="#b87a2a"/></radialGradient>
+<linearGradient id="btng" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a5a2b"/><stop offset="0.5" stop-color="#6b4220"/><stop offset="1" stop-color="#4a2c14"/></linearGradient>
+</defs>
+<ellipse cx="32" cy="50" rx="23" ry="12.5" fill="url(#btnc)"/>
+<path d="M9.5 47 C10 36 54 36 54.5 47 C53 48.5 51.5 47 50.5 50 C49.5 53 47 53 46.5 49.5 C45.5 47.5 43 48 42 51.5 C41 55 37.5 55 37 51 C36.5 48.5 33 48.5 32 52.5 C31 55.5 27.5 55 27.3 51.5 C27 48.5 24 48.5 23 51 C22 53.5 19 53 18.5 50 C18 47.5 15.5 48 14.5 50 C13.5 51.5 10.5 50 9.5 47 Z" fill="url(#btng)"/>
+<path d="M17 41.5 q4 -3 9 -3.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/>
+<path d="M15.5 46 q1 1.5 2.5 1.2" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+<path d="M17 38 C20 34.5 24 36 26 34 C28.5 36.5 30.5 33.5 32 34.5 C34 33.5 36 36.5 38 34 C40 36 44 34.5 47 38 C44 40.5 20 40.5 17 38 Z" fill="#fbe7a8"/>
+<path d="M20 37.6 q2 -1.8 4 0 M26 37.2 q2 -1.8 4 0 M32 37.2 q2 -1.8 4 0 M38 37.6 q2 -1.8 4 0" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.8"/>
+<ellipse cx="32" cy="27" rx="12.5" ry="10" fill="url(#btnc)"/>
+<path d="M19.8 25.5 C20.5 15 43.5 15 44.2 25.5 C43.3 27 42 26.2 41.4 28.3 C40.8 30.3 38.6 30.2 38.3 27.8 C37.8 26.3 36 26.6 35.4 29 C34.8 31.2 32.1 31 31.8 28.3 C31.5 26.6 29.5 26.8 28.9 28.8 C28.3 30.6 25.9 30.3 25.6 28 C25.3 26.4 23.4 26.7 22.8 28.2 C22.2 29.4 20.4 28.5 19.8 25.5 Z" fill="url(#btng)"/>
+<path d="M24.5 20.5 q3 -2.5 6.5 -2.7" fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" opacity="0.85"/>
+<path d="M27.5 16.5 C27 12 30 10 32 7.5 C34 10 37 12 36.5 16.5 C34.5 18 29.5 18 27.5 16.5 Z" fill="#fbe7a8"/>
+<path d="M29.5 14.5 q2.5 -3 5 0" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.85"/></svg><span class="gototop-label">Haut</span></a>
     </div>
-    
-    <!-- Scripts -->
+
+    <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
     <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
     <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
     <script src="js/jquery.stellar.min.js"></script>
+    <!-- Carousel -->
     <script src="js/owl.carousel.min.js"></script>
+    <!-- countTo -->
     <script src="js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-options.js"></script>
+    <!-- Main -->
     <script src="js/main.js"></script>
 
     <style>
@@ -371,6 +734,20 @@
                 padding: 5px 0;
             }
         }
+        /* Encarts : même hauteur, photos et boutons alignés en bas */
+        .services-row { display: flex; flex-wrap: wrap; }
+        .services-row > .service-box-custom { display: flex; }
+        .services-row .services { display: flex; flex-direction: column; width: 100%; height: 100%; }
+        .services-row .services > p:not(.svc-from):not(:last-child) { flex-grow: 1; }
+        .services-row .services .svc-photo { flex-shrink: 0; height: 190px !important; }
+        .services-row .services .svc-photo img { height: 190px !important; }
+        .services-row .services > p:last-child { margin-bottom: 0; }
+        #fh5co-services .services h3 { margin-top: 0; }
+        @media (max-width: 991px) { .services-row > .service-box-custom { width: 100%; } }
+        /* Photos dans les encarts */
+        .services .svc-photo { width: 100%; height: 190px; overflow: hidden; border-radius: 4px; margin: 6px 0 12px 0; }
+        .services .svc-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .services .svc-from { font-size: 13px; font-style: italic; color: #6b6c70; margin-bottom: 12px; }
     </style>
     </body>
 </html>
