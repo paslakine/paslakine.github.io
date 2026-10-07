@@ -56,6 +56,10 @@
         #fh5co-header .display-tc {
             background: transparent !important;
         }
+        /* Titre du header toujours visible (ne dépend plus de l'animation) */
+        #fh5co-header .display-t, #fh5co-header .display-tc { display: block !important; height: auto !important; }
+        #fh5co-header .animate-box { opacity: 1 !important; visibility: visible !important; }
+        #fh5co-header h1, #fh5co-header p, #fh5co-header .header-cta { position: relative; z-index: 3; }
 
         /* Galeries photos dézoomées (object-fit: contain) pour ne rien couper */
         .moodboard-gallery {
