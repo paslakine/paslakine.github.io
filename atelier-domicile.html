@@ -997,6 +997,9 @@
 .private-btn{display:inline-block;background:var(--private-gold);color:#fff!important;padding:15px 28px;border-radius:5px;font-weight:700;box-shadow:0 6px 16px rgba(217,165,69,.2);transition:.2s ease;}
 .private-btn:hover{transform:translateY(-2px);background:#c9963c!important;}
 .private-hero{background-position:center 48%!important;}
+/* Hauteur du header sur ordinateur (sur téléphone : voir css/style.css) */
+@media (min-width: 769px) { #fh5co-header { height: 500px !important; min-height: 500px !important; } #fh5co-header .display-t { margin-top: 0 !important; } }
+
 .private-hero .display-tc{vertical-align:middle!important;}
 .private-hero h1{font-size:clamp(32px,4.5vw,52px)!important;line-height:1.16!important;max-width:900px;margin:0 auto 20px!important;}
 .private-hero h2{font-size:clamp(16px,2vw,21px)!important;line-height:1.6!important;max-width:780px;margin:0 auto 28px!important;}
@@ -1778,7 +1781,7 @@
 <main class="private-page">
 
 <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm private-hero" role="banner"
-        style="background-color:#513c21; background-image:url('images/header tarte citron.jpg'); background-size:cover; background-position:center; height:500px !important; min-height:500px !important;"
+        style="background-color:#513c21; background-image:url('images/header tarte citron.jpg'); background-size:cover; background-position:center;"
         data-stellar-background-ratio="0.5">
   <div class="overlay" style="background:rgba(0,0,0,.44);z-index:1;"></div>
   <div class="container" style="position:relative;z-index:2;height:100%;">

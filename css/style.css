@@ -1813,4 +1813,35 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 
+
+/* Correctif mobile : le bloc placé juste sous le header ne doit pas se coincer
+   à côté de l'image du header (qui est « flottante »), sinon il part hors écran à droite. */
+#fh5co-header + *,
+.fh5co-cover + * {
+  clear: both;
+}
+
+/* Correctif mobile : le header s'agrandit selon son texte au lieu d'avoir une hauteur fixe
+   (sinon le titre, le texte et le bouton débordent sur le bloc suivant). */
+@media screen and (max-width: 768px) {
+  #fh5co-header.fh5co-cover {
+    height: auto !important;
+    min-height: 360px !important;
+    padding: 40px 0 !important;
+    display: flex;
+    align-items: center;
+  }
+  #fh5co-header > .container { width: 100%; }
+  #fh5co-header .container,
+  #fh5co-header .row,
+  #fh5co-header .row > [class*="col-"] {
+    height: auto !important;
+  }
+  #fh5co-header .display-t,
+  #fh5co-header .display-tc {
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
