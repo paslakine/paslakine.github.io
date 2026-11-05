@@ -36,23 +36,8 @@
 
 
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- ========================================== -->
-    <!-- TRACKING MICROSOFT CLARITY & GA4          -->
-    <!-- ========================================== -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "ycnmy4byph");
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QC4BR9BK6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3QC4BR9BK6');
-    </script>
+    <!-- Mesure d'audience (Google Analytics + Clarity) : chargée seulement si le visiteur accepte les cookies -->
+    <script src="js/cookies.js"></script>
     
 
 <style>
@@ -201,7 +186,7 @@
      <p class="ct-sec">Votre formule</p><div class="ct-choices" style="--cols:2" role="radiogroup"><label class="ct-choice"><input type="radio" name="formule" value="Solo" required><span><strong>Solo</strong><small>230 $ · 1 personne</small></span></label><label class="ct-choice"><input type="radio" name="formule" value="Duo"><span><strong>Duo ou parent-enfant</strong><small>270 $ · 2 personnes</small></span></label><label class="ct-choice"><input type="radio" name="formule" value="Groupe 3 à 8"><span><strong>Groupe de 3 à 8</strong><small>Sur soumission</small></span></label><label class="ct-choice"><input type="radio" name="formule" value="Carte-cadeau"><span><strong>Une carte-cadeau</strong><small>Pour offrir le cours</small></span></label></div><p class="ct-sec">Votre cours</p><div class="ct-f"><label for="recette">Ce que vous aimeriez apprendre *</label><input type="text" id="recette" name="recette" placeholder="Ex. : macarons, pâte à choux, tarte au citron…" required></div><div class="ct-row"><div class="ct-f"><label for="niveau">Votre niveau <span class="opt">(facultatif)</span></label><select id="niveau" name="niveau"><option value="">Choisir…</option><option value="Grand débutant">Grand débutant</option><option value="Je me débrouille">Je me débrouille</option><option value="Je pâtisse souvent">Je pâtisse souvent</option><option value="Avancé">Avancé</option></select></div><div class="ct-f"><label for="age_enfants">Âge des enfants <span class="opt">(facultatif)</span></label><input type="text" id="age_enfants" name="age_enfants" placeholder="Ex. : 9 ans"><div class="ct-hint">Pour un cours parent-enfant (dès 7 ans).</div></div></div><div class="ct-row"><div class="ct-f"><label for="date">Date ou période souhaitée *</label><input type="text" id="date" name="date" placeholder="Ex. : un samedi de novembre" required><div class="ct-hint">Pas encore de date précise ? Indiquez une période, je vous dis mes disponibilités.</div></div><div class="ct-f"><label for="quartier">Quartier ou ville *</label><input type="text" id="quartier" name="quartier" placeholder="Ex. : Plateau, Verdun, Laval…" required><div class="ct-hint">Déplacement inclus sur l'île de Montréal.</div></div></div><div class="ct-f"><label for="message">Autre chose à me dire ? <span class="opt">(facultatif)</span></label><textarea id="message" name="message" placeholder="Ex. : allergies, équipement de votre cuisine, occasion spéciale…"></textarea></div><p class="ct-sec">Vos coordonnées</p><div class="ct-row"><div class="ct-f"><label for="nom">Prénom et nom *</label><input type="text" id="nom" name="nom" placeholder="" required autocomplete="name"></div><div class="ct-f"><label for="telephone">Téléphone <span class="opt">(facultatif)</span></label><input type="tel" id="telephone" name="telephone" placeholder="" autocomplete="tel"></div></div><div class="ct-row"><div class="ct-f"><label for="email">Courriel *</label><input type="email" id="email" name="email" placeholder="" required autocomplete="email"></div></div>
      <button type="submit" class="ct-btn" data-label="Envoyer ma demande">Envoyer ma demande</button>
      <div class="ct-err" id="ctErr">Oups, l'envoi n'a pas fonctionné. Réessayez ou écrivez-moi directement à <a href="mailto:lacremedesbordelaises@gmail.com">lacremedesbordelaises@gmail.com</a>.</div>
-     <p class="ct-legal">Vos informations servent uniquement à répondre à votre demande. Aucune réservation n'est engagée avant votre confirmation.</p>
+     <p class="ct-legal">Vos informations servent uniquement à répondre à votre demande (<a href="politique-confidentialite.html" style="color:#6b6c70;text-decoration:underline;">politique de confidentialité</a>). Aucune réservation n'est engagée avant votre confirmation.</p>
     </form>
     <div class="ct-ok" id="ctOk" role="status"><p class="big">Merci, c'est bien reçu !</p><p>Je vous réponds personnellement sous 24 h (jours ouvrables) avec ma proposition. Pensez à vérifier vos courriels indésirables.</p><p style="margin-top:14px;"><a href="atelier-domicile.html" style="color:#513c21;font-weight:700;text-decoration:underline;">Retour au cours à domicile</a></p></div>
   </div>
@@ -236,6 +221,11 @@
                             </a>
                         </li>
                     </ul>
+                    <p class="footer-legal" style="margin: 15px 0 0 0; font-size: 13px;">
+                        <a href="conditions-generales.html" style="color: rgba(255,255,255,0.7);">Conditions générales</a> ·
+                        <a href="politique-confidentialite.html" style="color: rgba(255,255,255,0.7);">Politique de confidentialité</a> ·
+                        <a href="#" class="lien-cookies" style="color: rgba(255,255,255,0.7);">Gérer mes cookies</a>
+                    </p>
                 </div>
             </div>
 
