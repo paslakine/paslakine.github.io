@@ -73,6 +73,19 @@
     '@media (max-width:560px){#lcdb-cookies{left:10px;right:10px;bottom:10px;padding:14px 15px}' +
     '#lcdb-cookies p{font-size:13px}#lcdb-cookies .lcdb-btns{width:100%}#lcdb-cookies button{flex:1}}';
 
+  var EN = /^en/i.test(document.documentElement.lang || '');
+  var TXT = EN ? {
+    titre: 'Your privacy',
+    texte: 'I use audience measurement cookies, Google Analytics and Microsoft Clarity, to see which pages are useful to you and improve the site. They are only turned on with your consent. ',
+    lien: '/en/politique-confidentialite.html', plus: 'Learn more',
+    non: 'Decline', oui: 'Accept', zone: 'Cookie preferences'
+  } : {
+    titre: 'Votre vie privée',
+    texte: 'J\u2019utilise des témoins (cookies) de mesure d\u2019audience, Google Analytics et Microsoft Clarity, pour savoir quelles pages vous sont utiles et améliorer le site. Ils ne sont activés qu\u2019avec votre accord. ',
+    lien: '/politique-confidentialite.html', plus: 'En savoir plus',
+    non: 'Refuser', oui: 'Accepter', zone: 'Choix des témoins (cookies)'
+  };
+
   var banniere;
   function afficher() {
     if (!banniere) {
@@ -80,13 +93,12 @@
       banniere = document.createElement('div');
       banniere.id = 'lcdb-cookies';
       banniere.setAttribute('role', 'region');
-      banniere.setAttribute('aria-label', 'Choix des témoins (cookies)');
+      banniere.setAttribute('aria-label', TXT.zone);
       banniere.innerHTML =
-        '<p><strong>Votre vie privée</strong>J’utilise des témoins (cookies) de mesure d’audience, Google Analytics et Microsoft Clarity, ' +
-        'pour savoir quelles pages vous sont utiles et améliorer le site. Ils ne sont activés qu’avec votre accord. ' +
-        '<a href="/politique-confidentialite.html">En savoir plus</a></p>' +
-        '<div class="lcdb-btns"><button type="button" class="lcdb-non">Refuser</button>' +
-        '<button type="button" class="lcdb-oui">Accepter</button></div>';
+        '<p><strong>' + TXT.titre + '</strong>' + TXT.texte +
+        '<a href="' + TXT.lien + '">' + TXT.plus + '</a></p>' +
+        '<div class="lcdb-btns"><button type="button" class="lcdb-non">' + TXT.non + '</button>' +
+        '<button type="button" class="lcdb-oui">' + TXT.oui + '</button></div>';
       document.body.appendChild(banniere);
       banniere.querySelector('.lcdb-oui').onclick = function () {
         enregistrer('oui'); banniere.hidden = true; chargerMesure();
