@@ -84,7 +84,7 @@
       banniere.innerHTML =
         '<p><strong>Votre vie privée</strong>J’utilise des témoins (cookies) de mesure d’audience, Google Analytics et Microsoft Clarity, ' +
         'pour savoir quelles pages vous sont utiles et améliorer le site. Ils ne sont activés qu’avec votre accord. ' +
-        '<a href="politique-confidentialite.html">En savoir plus</a></p>' +
+        '<a href="/politique-confidentialite.html">En savoir plus</a></p>' +
         '<div class="lcdb-btns"><button type="button" class="lcdb-non">Refuser</button>' +
         '<button type="button" class="lcdb-oui">Accepter</button></div>';
       document.body.appendChild(banniere);
