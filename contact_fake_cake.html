@@ -36,23 +36,8 @@
 
 
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- ========================================== -->
-    <!-- TRACKING MICROSOFT CLARITY & GA4          -->
-    <!-- ========================================== -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "ycnmy4byph");
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QC4BR9BK6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3QC4BR9BK6');
-    </script>
+    <!-- Mesure d'audience (Google Analytics + Clarity) : chargée seulement si le visiteur accepte les cookies -->
+    <script src="js/cookies.js"></script>
     
 
 <style>
@@ -201,7 +186,7 @@
      <p class="ct-sec">Votre événement</p><div class="ct-row"><div class="ct-f"><label for="participants">Nombre de participants *</label><input type="number" id="participants" name="participants" placeholder="Ex. : 15" required min="1"></div><div class="ct-f"><label for="date">Date ou période souhaitée *</label><input type="text" id="date" name="date" placeholder="Ex. : 12 décembre, ou fin novembre" required><div class="ct-hint">Pas encore de date précise ? Indiquez une période, je vous dis mes disponibilités.</div></div></div><div class="ct-row"><div class="ct-f"><label for="moment">Moment de la journée <span class="opt">(facultatif)</span></label><select id="moment" name="moment"><option value="">Choisir…</option><option value="Matin">Matin</option><option value="Midi">Midi</option><option value="Après-midi">Après-midi</option><option value="Soirée">Soirée</option><option value="Je ne sais pas encore">Je ne sais pas encore</option></select></div><div class="ct-f"><label for="occasion">Occasion <span class="opt">(facultatif)</span></label><select id="occasion" name="occasion"><option value="">Choisir…</option><option value="Team building / consolidation d&#x27;équipe">Team building / consolidation d&#x27;équipe</option><option value="Party de Noël">Party de Noël</option><option value="Départ ou célébration">Départ ou célébration</option><option value="Séminaire">Séminaire</option><option value="Autre">Autre</option></select></div></div><label class="ct-f" style="display:block;margin-bottom:6px;font-size:13px;font-weight:700;">Lieu de l'atelier *</label><div class="ct-choices" style="--cols:2" role="radiogroup"><label class="ct-choice"><input type="radio" name="lieu" value="Locaux de l&#x27;entreprise" required><span><strong>Dans les locaux de votre entreprise</strong><small>Montréal et environs</small></span></label><label class="ct-choice"><input type="radio" name="lieu" value="Salle louée par le client"><span><strong>Dans une salle louée par vos soins</strong><small>Restaurant, salle de réception…</small></span></label><label class="ct-choice"><input type="radio" name="lieu" value="Salle partenaire LCDB"><span><strong>Dans une salle partenaire de La Crème des Bordelaises</strong><small>Location en supplément</small></span></label><label class="ct-choice"><input type="radio" name="lieu" value="Je ne sais pas encore"><span><strong>Je ne sais pas encore</strong><small>On en discute ensemble</small></span></label></div><div class="ct-f"><label for="message">Un mot sur votre équipe ou vos envies <span class="opt">(facultatif)</span></label><textarea id="message" name="message" placeholder="Ex. : le nom de l&#x27;équipe à écrire sur le gâteau, contraintes alimentaires, budget…"></textarea></div><p class="ct-sec">Vos coordonnées</p><div class="ct-row"><div class="ct-f"><label for="nom">Prénom et nom *</label><input type="text" id="nom" name="nom" placeholder="" required autocomplete="name"></div><div class="ct-f"><label for="entreprise">Entreprise <span class="opt">(facultatif)</span></label><input type="text" id="entreprise" name="entreprise" placeholder="" autocomplete="organization"></div></div><div class="ct-row"><div class="ct-f"><label for="email">Courriel professionnel *</label><input type="email" id="email" name="email" placeholder="" required autocomplete="email"></div><div class="ct-f"><label for="telephone">Téléphone <span class="opt">(facultatif)</span></label><input type="tel" id="telephone" name="telephone" placeholder="" autocomplete="tel"></div></div>
      <button type="submit" class="ct-btn" data-label="Envoyer ma demande">Envoyer ma demande</button>
      <div class="ct-err" id="ctErr">Oups, l'envoi n'a pas fonctionné. Réessayez ou écrivez-moi directement à <a href="mailto:lacremedesbordelaises@gmail.com">lacremedesbordelaises@gmail.com</a>.</div>
-     <p class="ct-legal">Vos informations servent uniquement à répondre à votre demande. Aucune réservation n'est engagée avant votre confirmation.</p>
+     <p class="ct-legal">Vos informations servent uniquement à répondre à votre demande (<a href="politique-confidentialite.html" style="color:#6b6c70;text-decoration:underline;">politique de confidentialité</a>). Aucune réservation n'est engagée avant votre confirmation.</p>
     </form>
     <div class="ct-ok" id="ctOk" role="status"><p class="big">Merci, c'est bien reçu !</p><p>Je vous réponds personnellement sous 24 h (jours ouvrables) avec ma proposition. Pensez à vérifier vos courriels indésirables.</p><p style="margin-top:14px;"><a href="teambuilding.html" style="color:#513c21;font-weight:700;text-decoration:underline;">Retour au team building</a></p></div>
   </div>
@@ -236,6 +221,11 @@
                             </a>
                         </li>
                     </ul>
+                    <p class="footer-legal" style="margin: 15px 0 0 0; font-size: 13px;">
+                        <a href="conditions-generales.html" style="color: rgba(255,255,255,0.7);">Conditions générales</a> ·
+                        <a href="politique-confidentialite.html" style="color: rgba(255,255,255,0.7);">Politique de confidentialité</a> ·
+                        <a href="#" class="lien-cookies" style="color: rgba(255,255,255,0.7);">Gérer mes cookies</a>
+                    </p>
                 </div>
             </div>
 

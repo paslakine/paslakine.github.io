@@ -36,23 +36,8 @@
 
 
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- ========================================== -->
-    <!-- TRACKING MICROSOFT CLARITY & GA4          -->
-    <!-- ========================================== -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "ycnmy4byph");
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QC4BR9BK6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3QC4BR9BK6');
-    </script>
+    <!-- Mesure d'audience (Google Analytics + Clarity) : chargée seulement si le visiteur accepte les cookies -->
+    <script src="js/cookies.js"></script>
     
 
 <style>
@@ -201,7 +186,7 @@
      <p class="ct-sec">Votre formule</p><div class="ct-choices" style="--cols:2" role="radiogroup"><label class="ct-choice"><input type="radio" name="formule" value="Sapin Puzzle épices" required><span><strong>Sapin Puzzle, ganache épices</strong><small>Épices de Noël, fruits et décors</small></span></label><label class="ct-choice"><input type="radio" name="formule" value="Sapin Puzzle vanille"><span><strong>Sapin Puzzle, ganache vanille</strong><small>Plus doux, fruits et décors</small></span></label><label class="ct-choice"><input type="radio" name="formule" value="Lettres épices"><span><strong>Lettres au choix, ganache épices</strong><small>Le nom ou le mot de votre choix</small></span></label><label class="ct-choice"><input type="radio" name="formule" value="Lettres vanille"><span><strong>Lettres au choix, ganache vanille</strong><small>Le nom ou le mot de votre choix</small></span></label><label class="ct-choice"><input type="radio" name="formule" value="Je ne sais pas encore"><span><strong>Je ne sais pas encore</strong><small>On en parle ensemble</small></span></label></div><p class="ct-sec">Votre party</p><div class="ct-row"><div class="ct-f"><label for="participants">Nombre de participants *</label><input type="number" id="participants" name="participants" placeholder="Ex. : 20" required min="1"></div><div class="ct-f"><label for="date">Date ou période souhaitée *</label><input type="text" id="date" name="date" placeholder="Ex. : 10 décembre" required><div class="ct-hint">Pas encore de date précise ? Indiquez une période, je vous dis mes disponibilités.</div></div></div><div class="ct-row"><div class="ct-f"><label for="moment">Moment de la journée <span class="opt">(facultatif)</span></label><select id="moment" name="moment"><option value="">Choisir…</option><option value="Matin">Matin</option><option value="Midi">Midi</option><option value="Après-midi">Après-midi</option><option value="Soirée">Soirée</option><option value="Je ne sais pas encore">Je ne sais pas encore</option></select></div><div class="ct-f"><label for="lieu">Lieu <span class="opt">(facultatif)</span></label><select id="lieu" name="lieu"><option value="">Choisir…</option><option value="Dans les locaux de votre entreprise">Dans les locaux de votre entreprise</option><option value="Dans une salle louée par vos soins">Dans une salle louée par vos soins</option><option value="Dans une salle partenaire de La Crème des Bordelaises">Dans une salle partenaire de La Crème des Bordelaises</option><option value="Je ne sais pas encore">Je ne sais pas encore</option></select></div></div><div class="ct-f"><label for="message">Un mot sur votre party <span class="opt">(facultatif)</span></label><textarea id="message" name="message" placeholder="Ex. : souper prévu après l&#x27;atelier, mot à écrire, allergies…"></textarea></div><p class="ct-sec">Vos coordonnées</p><div class="ct-row"><div class="ct-f"><label for="nom">Prénom et nom *</label><input type="text" id="nom" name="nom" placeholder="" required autocomplete="name"></div><div class="ct-f"><label for="entreprise">Entreprise <span class="opt">(facultatif)</span></label><input type="text" id="entreprise" name="entreprise" placeholder="" autocomplete="organization"></div></div><div class="ct-row"><div class="ct-f"><label for="email">Courriel professionnel *</label><input type="email" id="email" name="email" placeholder="" required autocomplete="email"></div><div class="ct-f"><label for="telephone">Téléphone <span class="opt">(facultatif)</span></label><input type="tel" id="telephone" name="telephone" placeholder="" autocomplete="tel"></div></div>
      <button type="submit" class="ct-btn" data-label="Vérifier la disponibilité">Vérifier la disponibilité</button>
      <div class="ct-err" id="ctErr">Oups, l'envoi n'a pas fonctionné. Réessayez ou écrivez-moi directement à <a href="mailto:lacremedesbordelaises@gmail.com">lacremedesbordelaises@gmail.com</a>.</div>
-     <p class="ct-legal">Vos informations servent uniquement à répondre à votre demande. Aucune réservation n'est engagée avant votre confirmation.</p>
+     <p class="ct-legal">Vos informations servent uniquement à répondre à votre demande (<a href="politique-confidentialite.html" style="color:#6b6c70;text-decoration:underline;">politique de confidentialité</a>). Aucune réservation n'est engagée avant votre confirmation.</p>
     </form>
     <div class="ct-ok" id="ctOk" role="status"><p class="big">Merci, c'est bien reçu !</p><p>Je vous réponds personnellement sous 24 h (jours ouvrables) avec ma proposition. Pensez à vérifier vos courriels indésirables.</p><p style="margin-top:14px;"><a href="party-noel.html" style="color:#513c21;font-weight:700;text-decoration:underline;">Retour à la party de Noël</a></p></div>
   </div>
@@ -236,6 +221,11 @@
                             </a>
                         </li>
                     </ul>
+                    <p class="footer-legal" style="margin: 15px 0 0 0; font-size: 13px;">
+                        <a href="conditions-generales.html" style="color: rgba(255,255,255,0.7);">Conditions générales</a> ·
+                        <a href="politique-confidentialite.html" style="color: rgba(255,255,255,0.7);">Politique de confidentialité</a> ·
+                        <a href="#" class="lien-cookies" style="color: rgba(255,255,255,0.7);">Gérer mes cookies</a>
+                    </p>
                 </div>
             </div>
 
