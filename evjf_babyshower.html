@@ -631,7 +631,9 @@
 /* =========================================================
    PAGE PLUS COMPACTE : moins d'espace, moins de défilement
    ========================================================= */
-#fh5co-header { height: 400px !important; min-height: 400px !important; }
+
+/* Hauteur du header sur ordinateur (sur téléphone : voir css/style.css) */
+@media (min-width: 769px) { #fh5co-header { height: 500px !important; min-height: 500px !important; } #fh5co-header .display-t { margin-top: 0 !important; } }
 .intro-section { margin-top: 35px !important; }
 .workshop-steps-section { padding-top: 40px !important; padding-bottom: 40px !important; }
 .workshop-steps-header { margin-bottom: 28px !important; }
@@ -651,7 +653,6 @@
 .reassurance-side-layout img { height: 300px !important; }
 .video-phone { flex-basis: 190px !important; width: 190px !important; }
 @media (max-width: 768px) {
-  #fh5co-header { height: 360px !important; min-height: 360px !important; }
   .workshop-steps-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 22px 16px !important; }
   .workshop-step p { font-size: 14px !important; }
   .why-photo-collage { grid-template-rows: 200px 130px !important; margin-bottom: 25px !important; }
@@ -810,23 +811,8 @@
 }
     </script>
 
-    <!-- ========================================== -->
-    <!-- TRACKING MICROSOFT CLARITY & GA4          -->
-    <!-- ========================================== -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "ycnmy4byph");
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QC4BR9BK6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3QC4BR9BK6');
-    </script>
+    <!-- Mesure d'audience (Google Analytics + Clarity) : chargée seulement si le visiteur accepte les cookies -->
+    <script src="js/cookies.js"></script>
     </head>
     <body>
         
@@ -888,7 +874,7 @@
     </nav>
 
     <!-- Header -->
-    <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-color: #513c21; background-image:url(images/atelier_evjf_montreal_bis.jpg); background-size: cover; background-position: center; height: 500px !important; min-height: 500px !important;" data-stellar-background-ratio="0.5">
+    <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-color: #513c21; background-image:url(images/atelier_evjf_montreal_bis.jpg); background-size: cover; background-position: center;" data-stellar-background-ratio="0.5">
         <div class="overlay" style="background: rgba(0, 0, 0, 0.45); z-index: 1;"></div>
         <div class="container" style="position: relative; z-index: 2; height: 100%;">
             <div class="row" style="height: 100%;">
@@ -1391,6 +1377,11 @@
                             </a>
                         </li>
                     </ul>
+                    <p class="footer-legal" style="margin: 15px 0 0 0; font-size: 13px;">
+                        <a href="conditions-generales.html" style="color: rgba(255,255,255,0.7);">Conditions générales</a> ·
+                        <a href="politique-confidentialite.html" style="color: rgba(255,255,255,0.7);">Politique de confidentialité</a> ·
+                        <a href="#" class="lien-cookies" style="color: rgba(255,255,255,0.7);">Gérer mes cookies</a>
+                    </p>
                 </div>
             </div>
 
